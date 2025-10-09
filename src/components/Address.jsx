@@ -1,0 +1,238 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { IoTrash } from 'react-icons/io5';
+import { toast } from 'react-toastify';
+import { RxCross2 } from "react-icons/rx";
+import { LuPlus } from "react-icons/lu";
+import { jwtDecode } from 'jwt-decode';
+
+function Address() {
+    const API_BASE = import.meta.env.VITE_BASE_URL;
+    const token = localStorage.getItem("authToken");
+    const decode = token ? jwtDecode(token) : null;
+    const [addresses, setAddresses] = useState([]);
+    const [showAddressForm, setShowAddressForm] = useState(false);
+    const [addressFormData, setAddressFormData] = useState({
+        uid: decode.uid,
+        addressType: "",
+        userName: "",
+        houseNo: "",
+        colony: "",
+        area: "",
+        city: "",
+        state: "",
+        pincode: "",
+        phoneNumber: "",
+        landmark: "",
+        isPrimary: false,
+    });
+    const handleAddressChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setAddressFormData(prev => ({
+            ...prev,
+            [name]: type === "checkbox" ? checked : value
+        }));
+    };
+
+    const fetchAddresses = async () => {
+        try {
+            const res = await axios.get(`${API_BASE}/api/Addresses/${decode.uid}`, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+
+            setAddresses(
+                (Array.isArray(res.data) ? res.data : [res.data]).sort((a, b) => (b.isPrimary === true) - (a.isPrimary === true))
+            );
+
+        } catch (error) {
+            console.error('Failed to fetch addresses:', error);
+        }
+    };
+    useEffect(() => {
+        fetchAddresses();
+    }, []);
+    
+    const handleAddressSave = async () => {
+        try {
+            const res = await axios.post(`${API_BASE}/api/Addresses/`, addressFormData);
+  
+            setAddressFormData({
+                uid: decode.uid,
+                addressType: "",
+                userName: "",
+                houseNo: "",
+                colony: "",
+                area: "",
+                city: "",
+                state: "",
+                pincode: "",
+                phoneNumber: "",
+                landmark: "",
+                isPrimary: false,
+            });
+            setShowAddressForm(false);
+            fetchAddresses()
+        } catch (error) {
+            console.error('Failed to save address:', error);
+            alert(error.response?.data?.message || 'Failed to save address');
+        }
+    };
+    const deleteAddress = async (aidToDelete) => {
+        try {
+            await axios.delete(`${API_BASE}/api/Addresses/${aidToDelete}`)
+            fetchAddresses();
+        } catch (error) {
+            console.log("Error in removing address", error)
+        }
+    }
+    const handlePrimaryCheckboxChange = async (aidToSet) => {
+        try {
+            await axios.put(
+                `${API_BASE}/api/Addresses/${aidToSet}`,
+                toast.success("Your address is set as primary")
+            );
+            fetchAddresses();
+        } catch (error) {
+            console.error('Failed to set address as primary:', error);
+            alert('Could not set address as primary');
+        }
+    };
+    return (
+
+        <div className="p-5 ml-[13rem] md:ml-[30rem] mt-[6rem]">
+            <div className='flex gap-[1rem] mb-4 items-center'>
+                <h2 className='text-xl font-bold ml-[4rem]'>Manage Address</h2>
+                <button onClick={() => setShowAddressForm(!showAddressForm)} className='bg-red-400 text-white h-[2rem] w-[2rem] text-2xl rounded-[50%] flex justify-center items-center'>
+                    {showAddressForm ? <RxCross2 /> : <LuPlus />}
+                </button>
+            </div>
+            {showAddressForm && (
+                <div className='flex flex-col gap-[2rem] justify-center items-center'>
+                    <div className='flex flex-col gap-[1rem]'>
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                            <select name="addressType" onChange={handleAddressChange} value={addressFormData.addressType} className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg '>
+                                <option value="Choose Address Type"
+                                    className='bg-base-100 dark:bg-base-200 '>Choose Address Type</option>
+                                <option value="Home"
+                                    className='bg-base-100 dark:bg-base-200 '>Home</option>
+                                <option value="Work"
+                                    className='bg-base-100 dark:bg-base-200 '>Work</option>
+                            </select>
+                            <input
+                                name='userName'
+                                onChange={handleAddressChange}
+                                value={addressFormData.userName}
+                                placeholder='Name'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
+                            <input
+                                name='houseNo'
+                                onChange={handleAddressChange}
+                                value={addressFormData.houseNo}
+                                placeholder='House'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
+                            <input
+                                name='colony'
+                                onChange={handleAddressChange}
+                                value={addressFormData.colony}
+                                placeholder='Colony'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg' />
+                            <input
+                                name='area'
+                                onChange={handleAddressChange}
+                                value={addressFormData.area}
+                                placeholder='Area'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg' />
+                            <input
+                                name='city'
+                                onChange={handleAddressChange}
+                                value={addressFormData.city}
+                                placeholder='City'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
+                            <input
+                                name='state'
+                                onChange={handleAddressChange}
+                                value={addressFormData.state}
+                                placeholder='State'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
+                            <input
+                                name='pincode'
+                                type='number'
+                                onChange={handleAddressChange}
+                                value={addressFormData.pincode}
+                                placeholder='Pincode'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
+                            <input
+                                name='phoneNumber'
+                                type='number'
+                                onChange={handleAddressChange}
+                                value={addressFormData.phoneNumber}
+                                placeholder='PhoneNo'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
+                            <input
+                                name='landmark'
+                                onChange={handleAddressChange}
+                                value={addressFormData.landmark}
+                                placeholder='Landmark'
+                                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg' />
+                        </div>
+                        <label className='ml-[.5rem]'>
+                            <input
+                                type="checkbox"
+                                name='isPrimary'
+                                className='mr-[.5rem] checkbox rounded-[50%]'
+                                onChange={handleAddressChange}
+                                checked={addressFormData.isPrimary}
+                            />{""} Set as primary
+                        </label>
+                    </div>
+                    <button onClick={handleAddressSave} className="bg-red-400 p-[.7rem] w-[20%] m-[1rem] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer">Save</button>
+                </div>
+            )}
+            <ul className={`list-none pl-5 ${showAddressForm ? "hidden" : ""}`}>
+                {[...addresses]
+                    .sort((a, b) => (b.isPrimary === true) - (a.isPrimary === true))
+                    .map((a, index) => (
+                        <li key={index} className='bg-white/10 p-4 rounded-[.5rem] w-[95%] md:w-[85%] mt-[3rem] shadow-md hover:scale-105 transition-all duration-500'>
+                            <div className='flex justify-between'>
+                                <div >
+                                    <div><strong>Name: </strong>{a.userName}</div>
+                                    <div><strong>House No: </strong>{a.houseNo}</div>
+                                    <div><strong>Colony: </strong>{a.colony} </div>
+                                    <div><strong>Area: </strong>{a.area}</div>
+                                    <div><strong>City: </strong>{a.city}</div>
+                                    <div><strong>State: </strong>{a.state}</div>
+                                    <div><strong>Pincode: </strong>{a.pincode}</div>
+                                    <div><strong>Phone No: </strong>{a.phoneNumber}</div>
+                                    <div><strong>Landmark: </strong>{a.landmark} </div>
+                                </div>
+                                <div className="flex flex-col gap-1 ">
+                                    <div className='flex items-center gap-3'>
+                                        <input
+                                            type="checkbox"
+                                            className='checkbox rounded-[50%]'
+                                            checked={a.isPrimary}
+                                            onChange={() => handlePrimaryCheckboxChange(a.aid)}
+                                        />
+                                        <label>{a.isPrimary ? "Primary Address" : "Set as Primary"}</label>
+                                    </div>
+                                    {!a.isPrimary && (
+                                        <div className="flex gap-4 items-center mt-2">
+                                            <IoTrash
+                                                className="h-[2rem] w-[2rem] cursor-pointer text-red-500"
+                                                onClick={() => deleteAddress(a.aid)}
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </li>
+                    ))}
+            </ul>
+        </div>
+
+    )
+}
+
+export default Address;
