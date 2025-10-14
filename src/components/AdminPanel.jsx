@@ -28,6 +28,7 @@ function AdminPanel() {
                 <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500 top-10 right-0' onClick={() => setActiveSection("updateUserRole")}>Update User Role</div>
                 <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500 top-10 right-0' onClick={() => setActiveSection("updateOrderStatus")}>Update Order Status</div>
                 <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500' onClick={() => setActiveSection("addProducts")} >Add Products</div>
+                <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500' onClick={() => navigate("/chatdashboard")} >Chat Dashboard</div>
               </div>
             </div>
             {activeSection == "updateUserRole" &&
@@ -36,6 +37,9 @@ function AdminPanel() {
               <UpdateOrderStatus />}
             {activeSection == "addProducts" &&
               <AddProducts />}
+              {activeSection == "addProducts" &&
+              <AddProducts />}
+
             <ToastContainer position="top-center" />
             <Cart />
           </div>

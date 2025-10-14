@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react"
 
-import { fetchActiveProducts, fetchProducts } from "../services/ProductService";
+import { fetchActiveProducts, fetchProducts, fetchTopSellingProducts } from "../services/ProductService";
 import { fetchCart as getCartItems } from "../services/cartService";
 import { fetchOrder as getOrderItems } from "../services/GetOrderService";
 
@@ -17,6 +17,21 @@ export function UserContext({ children }) {
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(8);
   const [totalItems, setTotalItems] = useState(0);
+  const [bestSellerIds, setBestSellerIds] = useState([]);
+
+const fetchTopSellerIds = async () => {
+  try {
+    const data = await fetchTopSellingProducts();
+    const ids = data.map(p => p.productId);
+    setBestSellerIds(ids);
+  } catch (err) {
+    console.error("Failed to fetch best seller IDs", err);
+  }
+};
+
+useEffect(() => {
+  fetchTopSellerIds();
+}, []);
 
   const loadProducts = async () => {
     try {
@@ -33,11 +48,12 @@ export function UserContext({ children }) {
       console.error("Failed to fetch products", err);
     }
   };
+
   useEffect(() => {
     loadProducts();
   }, [input, page, pageSize]);
 
-  
+ 
   const fetchCart = async () => {
     try {
       const cartItems = await getCartItems();
@@ -65,16 +81,13 @@ export function UserContext({ children }) {
       console.log("Failed to fetch order items", error)
     }
   }
-  useEffect(() => {
-    fetchOrders();
-  }, []);
 
-   const clearOrderData = () => {
-    setBackendOrders([]);
-  };
-  const clearCartData =()=> {
-    setBackendCart([]);
-  }
+ useEffect(() => {
+  const token = localStorage.getItem('authToken');
+  if (token) {
+    fetchOrders();
+  } 
+}, [localStorage.getItem('authToken')]); 
 
   const data = {
     input,
@@ -101,9 +114,9 @@ export function UserContext({ children }) {
     setBackendOrders,
     paymentMethod,
     setPaymentMethod,
-    clearCartData,
-    clearOrderData
-
+    bestSellerIds,
+    
+   
   };
 
   return (

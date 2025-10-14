@@ -13,7 +13,7 @@ export const fetchActiveProducts = async ({ page = 1, pageSize = 6, searchTerm =
 };
 
 export const fetchProducts = async ({ page = 1, pageSize = 6, token}) => {
-  console.log(token)
+  
   const res = await axios.get(`${API_BASE}/api/Products`, {
     params: {
       pageNumber: page,
@@ -26,5 +26,13 @@ export const fetchProducts = async ({ page = 1, pageSize = 6, token}) => {
   return res.data;
 };
 
+export const fetchTopSellingProducts=async(token) =>{
+  const res = await axios.get(`${API_BASE}/api/Products/best-seller`,{
+    header:{
+      Authorization:`Bearer ${token}`
+    }
+  });
+  return res.data; 
+}
 
 

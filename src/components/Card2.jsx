@@ -6,20 +6,24 @@ import { dataContext } from "../context/userContext";
 import axios from "axios";
 
 const API_BASE = import.meta.env.VITE_BASE_URL;
+
 function Card2({ cid, name, price, image, qty, stocks}) {
-  
+ const dispatch = useDispatch()  
   
   const { fetchCart } = useContext(dataContext)
 
   const updateQty = async (newQty) => {
+    const token = localStorage.getItem("authToken");
     if (newQty < 1 || newQty > stocks)
       return;
-    
-    
     try {
       await axios.put(
         `${API_BASE}/api/cart/${cid}`,
-        { quantity: newQty },
+         {quantity: newQty} ,
+        {headers:{
+      Authorization: `Bearer ${token}`,
+    }}
+        
       );
       fetchCart();
     } catch (error) {
@@ -29,7 +33,7 @@ function Card2({ cid, name, price, image, qty, stocks}) {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`${API_BASE}/cart/${cid}`)
+      await axios.delete(`${API_BASE}/api/cart/${cid}`)
       dispatch(RemoveItem(cid))
       fetchCart()
     } catch (error) {

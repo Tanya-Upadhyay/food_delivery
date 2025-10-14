@@ -9,15 +9,17 @@ function UpdateOrderStatus() {
   const [statusUpdates, setStatusUpdates] = useState({});
   const [selectedStatus, setSelectedStatus] = useState(null);
   const API_BASE = import.meta.env.VITE_BASE_URL;
+  const token = localStorage.getItem("authToken");
 
   const orders = async () => {
     try {
-      const res = await fetchAllOrders();
+      const res = await fetchAllOrders(token);
       setAllOrders(res);
     } catch (error) {
       console.error("Failed to fetch all orders", error);
     }
   };
+ 
 
   useEffect(() => {
     orders();
@@ -26,16 +28,16 @@ function UpdateOrderStatus() {
   const handleSaveStatus = async (orderId) => {
     try {
       await axios.put(
-        `${API_BASE}/api/OrderTrackers/${orderId}/${statusUpdates[orderId]}`,
-        {},
+        `${API_BASE}/api/OrderTrackers/${orderId}/${statusUpdates[orderId]}`,{},
         {
           headers: {
             "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
           },
         }
       );
       await orders();
-      
+
       setEditingOrderId(null);
       setStatusUpdates((prev) => {
         const updated = { ...prev };

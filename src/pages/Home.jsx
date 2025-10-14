@@ -16,12 +16,14 @@ function Home() {
     setPage,
     pageSize,
     totalItems,
+    bestSellerIds
   } = useContext(dataContext);
   function filter(category) {
     setInput(category === "All" ? "" : category);
     setPage(1);
   }
-  
+
+
   return (
     <>
       <div className="w-full min-h-screen overflow-hidden">
@@ -53,20 +55,24 @@ function Home() {
         </div>
         <div className={`flex flex-wrap gap-[3rem] justify-center items-center m-[1rem]`}>
           {cate.length > 0 ?
-            (cate.map((item, index) => (
-              <Card
-                name={item.productName}
-                key={index}
-                image={item.image}
-                price={item.price}
-                id={item.pid}
-                type={item.type}
-                stocks={item.stocks}
-              />
-            ))) : (<div className="flex flex-col justify-center items-center mt-[19rem] gap-[.7rem] text-2xl font-semibold text-gray-500">
-              <div>We are sorry:(</div>
-              <div>No Dish Found!</div>
-            </div>)}
+            (cate.slice()
+              .map((item, index) => (
+                <Card
+                  name={item.productName}
+                  key={index}
+                  image={item.image}
+                  price={item.price}
+                  id={item.pid}
+                  type={item.type}
+                  stocks={item.stocks}
+                  isBestSeller={bestSellerIds.includes(item.pid)}
+                />
+              ))) : (<div className="flex flex-col justify-center items-center mt-[19rem] gap-[.7rem] text-2xl font-semibold text-gray-500">
+                <div>We are sorry:(</div>
+                <div>No Dish Found!</div>
+              </div>)}
+
+
         </div>
         <Cart />
         <div className="flex flex-col justify-center items-center gap-4 my-8">

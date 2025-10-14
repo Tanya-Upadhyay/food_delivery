@@ -9,7 +9,7 @@ import { jwtDecode } from "jwt-decode";
 function AddProducts() {
     const API_BASE = import.meta.env.VITE_BASE_URL;
     const token = localStorage.getItem("authToken");
-  
+
     const [showForm, setShowForm] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
     const [editingId, setEditingId] = useState(null);
@@ -69,11 +69,18 @@ function AddProducts() {
         try {
             let res;
             if (isEditing) {
-                res = await axios.put(`${API_BASE}/api/products/${editingId}`, productData);
+                res = await axios.put(`${API_BASE}/api/products/${editingId}`, productData, {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    }
+                });
                 toast.success("Product Updated Successfully");
             } else {
                 res = await axios.post(`${API_BASE}/api/products`, productData, {
-                    headers: { "Content-Type": "multipart/form-data" },
+                    headers: {
+                        "Content-Type": "multipart/form-data",
+                        Authorization: `Bearer ${token}`,
+                    },
                 });
                 toast.success("Product Added Successfully");
             }
@@ -109,7 +116,7 @@ function AddProducts() {
                     onClick={() => {
                         setShowForm(!showForm);
                         setIsEditing(false);
-                        setFormData({ productName: "", category: "", price: "", type: "", image: "", stocks: 0, productStatus: ""});
+                        setFormData({ productName: "", category: "", price: "", type: "", image: "", stocks: 0, productStatus: "" });
                     }}
                     className="bg-red-400 text-white h-[2rem] w-[2rem] text-2xl rounded-full flex justify-center items-center"
                 >

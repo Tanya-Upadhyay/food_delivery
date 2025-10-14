@@ -9,6 +9,9 @@ import Signup from './components/Signup';
 import User from './components/User';
 import Payment from './components/Payment';
 import AdminPanel from './components/AdminPanel';
+import ChatBox from './components/ChatBox';
+import ChatDashboard from './components/ChatDashboard';
+
 
 function App() {
   return (
@@ -24,6 +27,8 @@ function App() {
           <Route path='*' element={<About/>}></Route>
           <Route path='/payment' element={<Payment/>}></Route>
           <Route path = '/admin' element={<AdminPanel/>}></Route>
+          <Route path = '/chatbox' element={<ChatBox/>}></Route>
+          <Route path = '/chatdashboard' element={<ChatDashboard/>}></Route>
         </Routes>
       </Router>
       

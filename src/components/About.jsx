@@ -3,7 +3,18 @@ import { Link } from 'react-router-dom'
 import Footer from './Footer'
 import Nav2 from './Nav2'
 import Cart from './Cart'
+import { useContext, useEffect } from 'react';
+import { dataContext } from '../context/userContext';
 function About() {
+  const {fetchCart, fetchOrders} = useContext(dataContext)
+  useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      fetchOrders();
+      fetchCart();
+    }
+    
+  }, [localStorage.getItem('authToken')]); 
   return (<>
     <div className='w-[100vw] h-[100vh] flex flex-col overflow-hidden'>
       <Nav2 />

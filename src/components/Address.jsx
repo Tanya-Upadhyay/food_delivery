@@ -57,7 +57,6 @@ function Address() {
     const handleAddressSave = async () => {
         try {
             const res = await axios.post(`${API_BASE}/api/Addresses/`, addressFormData);
-  
             setAddressFormData({
                 uid: decode.uid,
                 addressType: "",

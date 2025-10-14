@@ -13,10 +13,10 @@ export const fetchOrder = async () => {
   return res.data;
 };
 
-export const fetchAllOrders = async () => {
+export const fetchAllOrders = async (token) => {
   const res = await axios.get(`${API_BASE}/api/Orders`, {
-    header: {
-      Authorization: `Bearer ${token}`
+    headers: {
+      Authorization: `Bearer ${token}`,
     }
   })
   return res.data;

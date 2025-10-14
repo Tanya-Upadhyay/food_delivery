@@ -10,17 +10,16 @@ function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const navigate = useNavigate()
-  let {setBackendOrders, setBackendCart} = useContext(dataContext)
+   
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const { authToken } = await postLogin(email, password);
+      
       localStorage.setItem("authToken", authToken);
       localStorage.setItem("isLoggedIn", true);
       toast.success("Login successful!");
       navigate("/about");
-     
-     
     } catch (error) {
       if (error.response && error.response.status === 401) {
         toast.error("Invalid email or password");
@@ -28,7 +27,6 @@ function Login() {
         toast.error("Login failed. Please try again.");
       }
     }
-   
   }
   return (
     <div className='overflow-hidden w-[100vw] h-[100vh] flex flex-col justify-between '>
