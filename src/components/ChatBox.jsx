@@ -96,7 +96,7 @@ const ChatBox = ({ adminId }) => {
         <div className='h-[75%] w-[70%] p-[1rem] ml-[3rem] mr-[3rem] border-2 rounded-md overflow-y-scroll space-x-4 shadow-md'>
           {messages.map((msg, index) => (
             <div key={index} className={`${msg.senderId === decode.uid ? 'text-right' : 'text-left'} `}>
-              <div className={`${msg.senderId === decode.uid ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[.5rem] p-[1rem] rounded-md max-w-[75%]`}>
+              <div className={`${msg.senderId === decode.uid ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[.5rem] p-[1rem] rounded-md max-w-[200px]`}>
                 <div className='text-black' ><b>{msg.senderId === decode.uid ? 'You' : 'Admin'}</b></div>
                 <div className='text-black'>{msg.message}</div>
                 <div className='text-[.7rem] text-gray-400' >

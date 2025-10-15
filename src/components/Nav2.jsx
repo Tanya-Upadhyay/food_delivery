@@ -2,15 +2,88 @@ import { Link } from 'react-router-dom'
 import { SiIfood } from "react-icons/si";
 import ThemeController from './ThemeController';
 import { IoPerson } from "react-icons/io5";
-import { useContext, } from 'react';
+import { useContext, useEffect, useRef, useState, } from 'react';
 import { dataContext } from '../context/userContext';
 import { IoBag } from "react-icons/io5";
 import { jwtDecode } from 'jwt-decode';
+import axios from 'axios';
+import * as signalR from '@microsoft/signalr';
 function Nav2() {
   let { setShowCart, backendCart } = useContext(dataContext)
+  const [unreadCount, setUnreadCount] = useState(0)
   const isLoggedIn = localStorage.getItem("isLoggedIn");
   const token = localStorage.getItem("authToken");
   const decode = token ? jwtDecode(token) : null;
+  const API_BASE = import.meta.env.VITE_BASE_URL;
+
+
+  const connectionRef = useRef(null);
+
+  useEffect(() => {
+
+    const fetchUnreadCount = async () => {
+      if (decode?.roles === "user") {
+        try {
+          const response = await axios.get(`${API_BASE}/api/chat/unread-counts`, {
+            params: { senderId: "31", receiverId: decode.uid },
+            headers: { Authorization: `Bearer ${token}` }
+          });
+
+          setUnreadCount(Object.values(response.data)[0] || 0);
+        } catch (error) {
+          console.error("Error fetching unread chat count", error);
+        }
+      }
+    };
+    fetchUnreadCount();
+
+
+    const newConnection = new signalR.HubConnectionBuilder()
+      .withUrl(`${API_BASE}/chatHub`, { accessTokenFactory: () => token })
+      .withAutomaticReconnect()
+      .build();
+
+    newConnection.start()
+      .then(() => {
+
+        return newConnection.invoke('Join', decode.uid);
+      })
+      .then(() => {
+
+        newConnection.on('ReceiveMessage', (from, message, timestamp) => {
+
+          if (from === "31") {
+            setUnreadCount(prev => prev + 1);
+          }
+        });
+      })
+      .catch(e => console.error('SignalR Connection Error:', e));
+
+    connectionRef.current = newConnection;
+
+    return () => {
+      newConnection.stop();
+    };
+  }, []);
+
+  const handleMarkAsRead = async () => {
+    try {
+      await axios.post(`${API_BASE}/api/chat/mark-as-read`, null, {
+        params: {
+          senderId: "31",
+          receiverId: decode.uid
+        },
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+
+      setUnreadCount(0);
+    } catch (error) {
+      console.error("Failed to mark messages as read", error);
+    }
+  };
+
   return (
     <div className='fixed bg-base-100 dark:bg-base-200 w-[100vw] sm:w-[100vw] md:w-[100vw] flex justify-between z-50'>
       <div className="navbar border-white shadow-lg">
@@ -24,7 +97,21 @@ function Nav2() {
             <li><Link to="/">About</Link></li>
             <li><Link to="/menu">Menu</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-            {decode?.roles == "user" ? (<li><Link to="/chatbox">Chat Box</Link></li>): (null)}
+            {decode?.roles === "user" && (
+              <li>
+                <Link to="/chatbox">
+                  <div onClick={handleMarkAsRead} className="relative inline-block">
+                    Chat Box
+                    {unreadCount > 0 && (
+                      <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                        {unreadCount}
+                      </span>
+                    )}
+                  </div>
+                </Link>
+              </li>
+            )}
+
           </ul>
         </div>
 

@@ -61,8 +61,6 @@ const ChatDashboard = () => {
                         [from]: (prev[from] || 0) + 1
                     }));
                 }
-
-
                 setLastMessageTimestamps(prev => ({
                     ...prev,
                     [from]: timestamp
@@ -120,7 +118,23 @@ const ChatDashboard = () => {
         return timeB - timeA;
     });
 
+    useEffect(() => {
+        const fetchUnreadCounts = async () => {
+            try {
+                const res = await axios.get(`${API_BASE}/api/chat/unread-counts`, {
+                    params: {
+                        receiverId: decode.uid
+                    },
+                    headers: { Authorization: `Bearer ${token}` }
+                });
+                setUnreadCounts(res.data);
+            } catch (err) {
+                console.error('Failed to load unread counts:', err);
+            }
+        };
 
+        fetchUnreadCounts();
+    }, []);
     return (
         <div className="overflow-hidden min-h-screen flex flex-col justify-between">
             <Nav2 />
@@ -133,11 +147,16 @@ const ChatDashboard = () => {
                         className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500 top-10 right-0 text-xl font-bold mt-[1rem]'
                         onClick={() => {
                             setSelectedUser(user);
+                            axios.post(`${API_BASE}/api/chat/mark-as-read?senderId=${user.uid}`, null, {
+                                headers: { Authorization: `Bearer ${token}` }
+                            });
+                            
                             setUnreadCounts(prev => ({
                                 ...prev,
                                 [user.uid]: 0
                             }));
                         }}
+
                     >
                         <div className='flex gap-[2rem]'>
                             <span>{user.name || user.uid}</span>
