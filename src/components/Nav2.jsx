@@ -15,7 +15,7 @@ function Nav2() {
   const token = localStorage.getItem("authToken");
   const decode = token ? jwtDecode(token) : null;
   const API_BASE = import.meta.env.VITE_BASE_URL;
-
+  const adminId = "31"
 
   const connectionRef = useRef(null);
 
@@ -25,7 +25,7 @@ function Nav2() {
       if (decode?.roles === "user") {
         try {
           const response = await axios.get(`${API_BASE}/api/chat/unread-counts`, {
-            params: { senderId: "31", receiverId: decode.uid },
+            params: { senderId: adminId, receiverId: `${decode.uid}` },
             headers: { Authorization: `Bearer ${token}` }
           });
 
@@ -52,7 +52,7 @@ function Nav2() {
 
         newConnection.on('ReceiveMessage', (from, message, timestamp) => {
 
-          if (from === "31") {
+          if (from === adminId) {
             setUnreadCount(prev => prev + 1);
           }
         });
@@ -65,20 +65,23 @@ function Nav2() {
       newConnection.stop();
     };
   }, []);
-
+  
   const handleMarkAsRead = async () => {
     try {
-      await axios.post(`${API_BASE}/api/chat/mark-as-read`, null, {
+      await axios.post(`${API_BASE}/api/chat/mark-as-read`, adminId,{
         params: {
-          senderId: "31",
-          receiverId: decode.uid
+          senderId: adminId,
+          receiverId: `${decode?.uid}`
         },
         headers: {
           Authorization: `Bearer ${token}`
         }
       });
 
-      setUnreadCount(0);
+      setUnreadCount(prev => ({
+                                ...prev,
+                                [`${decode?.uid}`]: 0
+                            }));
     } catch (error) {
       console.error("Failed to mark messages as read", error);
     }
@@ -101,7 +104,7 @@ function Nav2() {
               <li>
                 <Link to="/chatbox">
                   <div onClick={handleMarkAsRead} className="relative inline-block">
-                    Chat Box
+                    Support
                     {unreadCount > 0 && (
                       <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                         {unreadCount}
@@ -115,7 +118,7 @@ function Nav2() {
           </ul>
         </div>
 
-        <div className='flex gap-[1rem]  md:ml-[25%] ml-[3%] '>
+        <div className={`flex gap-[1rem] ${decode?.roles ==="user" ? "md:ml-[20%]" : "md:ml-[26%]" }  ml-[3%] `}>
           <div >
             <ThemeController />
           </div>

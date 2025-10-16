@@ -29,11 +29,13 @@ function Login() {
     }
   }
   return (
-    <div className='overflow-hidden w-[100vw] h-[100vh] flex flex-col justify-between '>
+    <div className='overflow-x-hidden w-[100vw] h-[100vh] flex flex-col justify-between '>
       <Nav2 />
-      <div className='flex flex-col gap-[2rem] justify-center items-center mt-[15rem]'>
+      <div className='flex justify-center items-center p-[2rem]'>
+        <div><img src="Login-bro.png" className='h-[100%] w-[70%] mt-[5rem] ' /></div>
+      <div className='h-[80%] w-[50%] flex flex-col gap-[2rem] justify-center items-center mr-[10rem] bg-white/10 rounded-lg mt-[4rem]'>
 
-        <form onSubmit={handleLogin} className='flex flex-col gap-[1rem] justify-center items-center' >
+        <form onSubmit={handleLogin} className='flex flex-col gap-[1rem] justify-center items-center p-[5rem]' >
           <h1 className='text-3xl font-bold '>Login</h1>
           <input
             type="email"
@@ -53,7 +55,8 @@ function Login() {
           <Link to="/signup">Sign up</Link>
         </div>
       </div>
-      <Footer />
+      </div>
+      
     </div>
 
   )

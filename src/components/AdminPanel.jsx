@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Nav2 from "./Nav2";
 import AddProducts from "./AddProducts";
 import UpdateOrderStatus from "./UpdateOrderStatus";
@@ -9,10 +9,18 @@ import UserRole from "./UserRole";
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 function AdminPanel() {
-  const [activeSection, setActiveSection] = useState("updateUserRole")
+  
+
+  const [activeSections, setActiveSections] = useState(() => {
+    return localStorage.getItem("activeSections") || "updateUserRole";
+  })
   const token = localStorage.getItem("authToken");
   const decode = token ? jwtDecode(token) : null;
    const navigate = useNavigate()
+
+   useEffect(() => {
+       localStorage.setItem("activeSections", activeSections);
+     }, [activeSections]);
  
   return (
     <>
@@ -25,20 +33,19 @@ function AdminPanel() {
                 <strong>Admin Master</strong>
               </p>
               <div className='flex flex-col gap-2 text-xl ml-10 mt-10 font-bold'>
-                <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500 top-10 right-0' onClick={() => setActiveSection("updateUserRole")}>Update User Role</div>
-                <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500 top-10 right-0' onClick={() => setActiveSection("updateOrderStatus")}>Update Order Status</div>
-                <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500' onClick={() => setActiveSection("addProducts")} >Add Products</div>
+                <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500 top-10 right-0' onClick={() => setActiveSections("updateUserRole")}>Update User Role</div>
+                <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500 top-10 right-0' onClick={() => setActiveSections("updateOrderStatus")}>Update Order Status</div>
+                <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500' onClick={() => setActiveSections("addProducts")} >Add Products</div>
                 <div className='p-[1rem] hover:bg-red-400 hover:text-white transition-all duration-500' onClick={() => navigate("/chatdashboard")} >Chat Dashboard</div>
               </div>
             </div>
-            {activeSection == "updateUserRole" &&
+            {activeSections == "updateUserRole" &&
               <UserRole />}
-            {activeSection == "updateOrderStatus" &&
+            {activeSections == "updateOrderStatus" &&
               <UpdateOrderStatus />}
-            {activeSection == "addProducts" &&
+            {activeSections == "addProducts" &&
               <AddProducts />}
-              {activeSection == "addProducts" &&
-              <AddProducts />}
+             
 
             <ToastContainer position="top-center" />
             <Cart />

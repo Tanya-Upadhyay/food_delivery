@@ -15,8 +15,14 @@ export const fetchUser = async () => {
   return res.data;
 };
 
-export const fetchAllUser = async (token) => {
+export const fetchAllUser = async ({ page = 1, pageSize = 6, token}) => {
+  
+  
   const res = await axios.get(`${API_BASE}/api/Users`, {
+    params: {
+      pageNumber: page,
+      pageSize,
+    },
     headers: {
       Authorization: `Bearer ${token}`,
     },

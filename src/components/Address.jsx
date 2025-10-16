@@ -13,7 +13,7 @@ function Address() {
     const [addresses, setAddresses] = useState([]);
     const [showAddressForm, setShowAddressForm] = useState(false);
     const [addressFormData, setAddressFormData] = useState({
-        uid: decode.uid,
+        uid: decode?.uid,
         addressType: "",
         userName: "",
         houseNo: "",
@@ -36,7 +36,7 @@ function Address() {
 
     const fetchAddresses = async () => {
         try {
-            const res = await axios.get(`${API_BASE}/api/Addresses/${decode.uid}`, {
+            const res = await axios.get(`${API_BASE}/api/Addresses/${decode?.uid}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -58,7 +58,7 @@ function Address() {
         try {
             const res = await axios.post(`${API_BASE}/api/Addresses/`, addressFormData);
             setAddressFormData({
-                uid: decode.uid,
+                uid: decode?.uid,
                 addressType: "",
                 userName: "",
                 houseNo: "",
@@ -80,24 +80,36 @@ function Address() {
     };
     const deleteAddress = async (aidToDelete) => {
         try {
-            await axios.delete(`${API_BASE}/api/Addresses/${aidToDelete}`)
+            await axios.delete(`${API_BASE}/api/Addresses/${aidToDelete}`,
+                {headers: {
+                        "Content-Type": "multipart/form-data",
+                        Authorization: `Bearer ${token}`,
+                    }}
+            )
             fetchAddresses();
         } catch (error) {
             console.log("Error in removing address", error)
         }
     }
     const handlePrimaryCheckboxChange = async (aidToSet) => {
-        try {
-            await axios.put(
-                `${API_BASE}/api/Addresses/${aidToSet}`,
-                toast.success("Your address is set as primary")
-            );
-            fetchAddresses();
-        } catch (error) {
-            console.error('Failed to set address as primary:', error);
-            alert('Could not set address as primary');
-        }
-    };
+    try {
+        await axios.put(
+            `${API_BASE}/api/Addresses/${aidToSet}`,
+            {}, 
+            {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            }
+        );
+        toast.success("Your address is set as primary");
+        fetchAddresses();
+    } catch (error) {
+        console.error('Failed to set address as primary:', error);
+        toast.error("Failed to set address as primary");
+    }
+};
+
     return (
 
         <div className="p-5 ml-[13rem] md:ml-[30rem] mt-[6rem]">

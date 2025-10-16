@@ -21,6 +21,7 @@ const ChatBox = ({ adminId }) => {
       useEffect(() => {
           scrollToBottom();
       }, [messages]);
+
   useEffect(() => {
     const fetchHistory = async () => {
       try {
@@ -35,7 +36,6 @@ const ChatBox = ({ adminId }) => {
           }
         });
         setMessages(response.data);
-        console.log(response.data)
       } catch (error) {
         console.error('Failed to fetch chat history:', error);
       }
@@ -93,7 +93,7 @@ const ChatBox = ({ adminId }) => {
       
       <div className='w-[100vw] h-[100vh] flex flex-col justify-center items-center'>
         <h1 className=' font-bold text-2xl m-[1rem] text-center mt-[3rem]'>Support</h1>
-        <div className='h-[75%] w-[70%] p-[1rem] ml-[3rem] mr-[3rem] border-2 rounded-md overflow-y-scroll space-x-4 shadow-md'>
+        <div className='h-[75%] w-[70%] p-[1rem] ml-[3rem] mr-[3rem] bg-blue-/10 rounded-md overflow-y-scroll space-x-4 shadow-md p-[1rem]'>
           {messages.map((msg, index) => (
             <div key={index} className={`${msg.senderId === decode.uid ? 'text-right' : 'text-left'} `}>
               <div className={`${msg.senderId === decode.uid ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[.5rem] p-[1rem] rounded-md max-w-[200px]`}>
@@ -105,7 +105,7 @@ const ChatBox = ({ adminId }) => {
               </div>
             </div>
           ))}
-          <div ref={messagesEndRef} />
+          <div ref={messagesEndRef}></div>
         </div>
         <div className='w-[70%] flex justify-center items-center gap-[1rem] mt-[2rem]'>
           <input
@@ -113,7 +113,7 @@ const ChatBox = ({ adminId }) => {
             value={input}
             onChange={e => setInput(e.target.value)}
             placeholder="Type a message..."
-            className='p-[1rem] w-[70%] outline-none bg-gray-100 rounded-md text-black shadow-lg'
+            className='p-[1rem] w-[70%] outline-none bg-white/10 rounded-md  shadow-lg'
           />
           <button onClick={sendMessage} className="bg-red-400 p-[1rem] w-[5%]  rounded-md font-bold shadow-md text-white hover:bg-red-300 cursor-pointer">Send</button>
         </div>

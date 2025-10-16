@@ -10,6 +10,7 @@ function Cart() {
   let deliverFee = 20;
   let taxes = subtotal * 0.005;
   let total = Math.floor(subtotal + deliverFee + taxes)
+  
   return (
     <div>
       <div className={`w-[100vw] h-[100%] fixed top-0 right-0 bg-base-100 dark:bg-base-200 shadow-lg transition-all duration-500 z-50 ${showCart ? "translate-x-0" : "translate-x-full"} md:w-[40vw] overflow-y-auto overflow-x-hidden`}>
@@ -59,7 +60,7 @@ function Cart() {
                 onClick={() => { setShowCart(false) }}
               >Choose your payment method</button></Link>
           </> :
-          <span className="flex justify-center items-center font-semibold text-2xl mt-[20rem]">Empty Cart.......</span>}
+          (<span className="flex justify-center items-center font-semibold text-2xl mt-[20rem]">Empty Cart.......</span>)}
       </div>
     </div>
   )

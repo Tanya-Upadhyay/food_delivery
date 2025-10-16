@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { FaEdit } from "react-icons/fa";
 import { FaSave } from "react-icons/fa";
+import { fetchAllUser } from "../services/UserService";
 
 function UserRole() {
   const token = localStorage.getItem("authToken");
@@ -9,23 +10,47 @@ function UserRole() {
   const [editingUserId, setEditingUserId] = useState(null);
   const [editedRole, setEditedRole] = useState("");
   const API_BASE = import.meta.env.VITE_BASE_URL;
+  const [totalItems, setTotalItems] = useState(0);
+  const [page, setPage] = useState(1);
+  const [pageSize,] = useState(5);
 
+  // const loadProducts = async () => {
+  //         try {
+  //             const response = await fetchProducts({
+  //                 page,
+  //                 pageSize,
+  //                 token
+  //             });
+
+  //             setCate(response.items);
+  //             setAllProducts(response.items);
+  //             setTotalItems(response.totalItems);
+  //         } catch (err) {
+  //             console.error("Failed to fetch products", err);
+  //         }
+  //     };
+  //     useEffect(() => {
+  //         loadProducts();
+  //     }, [page, pageSize]);
+  const loadUsers = async () => {
+    try {
+      const response = await fetchAllUser({
+        page,
+        pageSize,
+        token
+      });
+
+      setUsers(response.items);
+      setTotalItems(response.totalItems);
+    } catch (err) {
+      console.error('Failed to fetch products', err)
+    }
+  };
   useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        const response = await axios.get(`${API_BASE}/api/Users`, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          }
-        });
-        setUsers(response.data);
-      } catch (error) {
-        console.error("Error fetching users:", error);
-      }
-    };
+    loadUsers();
 
-    fetchUsers();
-  }, []);
+  }, [page, pageSize])
+
 
   const handleEditClick = (user) => {
     setEditingUserId(user.email);
@@ -118,6 +143,31 @@ function UserRole() {
             })}
         </tbody>
       </table>
+      <div className="flex flex-col justify-center items-center gap-4 my-8 mt-[5rem]">
+        <div className="flex gap-[1rem] justify-center items-center">
+          <button
+            onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
+            disabled={page === 1}
+            className="px-4 py-2 bg-red-500 text-white rounded disabled:opacity-50 ">
+            Prev
+          </button>
+          <span className="font-semibold">Page {page}</span>
+          <button
+            onClick={() =>
+              setPage((prev) =>
+                prev * pageSize < totalItems ? prev + 1 : prev
+              )}
+            disabled={page * pageSize >= totalItems}
+            className="px-4 py-2 bg-red-500 text-white rounded disabled:opacity-50">
+            Next
+          </button>
+        </div>
+        <div>
+          <p className="text-center mt-2">
+            Showing {users?.length || 0} of {totalItems} results
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
