@@ -43,10 +43,10 @@ function Login() {
             onChange={e => setEmail(e.target.value)}
             className='flex  bg-white/10 p-[14px] w-[25rem] gap-[1rem] rounded-md m-[1rem] shadow-lg hover:scale-102 transtition-all duration-500 ' />
           <input
-            type="text"
+            type="password"
             placeholder='password'
             onChange={e => setPassword(e.target.value)}
-            className='flex  bg-white/10 p-[14px] w-[25rem] gap-[1rem] rounded-md m-[1rem] shadow-lg hover:scale-102 transtition-all duration-500 ' />
+            className='flex bg-white/10 p-[14px] w-[25rem] gap-[1rem] rounded-md m-[1rem] shadow-lg hover:scale-102 transtition-all duration-500'/>
           <button onSubmit={handleLogin}
             className="bg-red-400 p-[.7rem] w-[22rem] m-[1rem] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer">Login</button>
           <ToastContainer position="top-center" />

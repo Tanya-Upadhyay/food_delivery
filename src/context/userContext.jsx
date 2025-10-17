@@ -115,8 +115,6 @@ useEffect(() => {
     paymentMethod,
     setPaymentMethod,
     bestSellerIds,
-    
-   
   };
 
   return (

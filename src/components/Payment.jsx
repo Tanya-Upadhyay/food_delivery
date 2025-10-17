@@ -6,7 +6,8 @@ import { useContext, useState } from "react";
 import { dataContext } from "../context/userContext";
 import Cart from "./Cart";
 import { jwtDecode } from "jwt-decode";
-import { postOrder as postOrderItems } from "../services/postOrderService";
+import { postOrder } from "../services/PostOrderService";
+
 
 function Payment({ oid }) {
     const [showConfirmModal, setShowConfirmModal] = useState(false);
@@ -36,7 +37,7 @@ function Payment({ oid }) {
             OID: oid,
         };
         try {
-            await postOrderItems(orderItems);
+            await postOrder(orderItems);
             toast.success("Order Placed");
             fetchOrders();
             setShowConfirmModal(false);

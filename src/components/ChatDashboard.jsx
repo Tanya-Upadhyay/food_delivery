@@ -1,9 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import * as signalR from '@microsoft/signalr';
 import axios from 'axios';
 import Nav2 from './Nav2';
 import { jwtDecode } from 'jwt-decode';
 import Footer from './Footer';
+import Cart from './Cart';
 
 const ChatDashboard = () => {
     const [users, setUsers] = useState([]);
@@ -21,9 +22,16 @@ const ChatDashboard = () => {
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
+
     useEffect(() => {
         scrollToBottom();
     }, [messages]);
+
+    useEffect(() => {
+    const timeout = setTimeout(scrollToBottom, 100);
+    return () => clearTimeout(timeout);
+}, [messages]);
+
 
     useEffect(() => {
         const fetchUsers = async () => {
@@ -174,43 +182,44 @@ const ChatDashboard = () => {
 
                 {selectedUser ? (
                     <div className={`p-5 ml-[22rem] md:ml-[30rem] mt-[6rem]`}>
-                    <h3 className='ml-[4rem]'>Chat with: {selectedUser?.name}</h3>
+                        <h3 className='ml-[4rem]'>Chat with: {selectedUser?.name}</h3>
 
-                    <div className='h-[50rem] w-[95rem] p-[1rem] ml-[3rem] mr-[3rem]  rounded-md overflow-y-scroll space-x-4 shadow-md bg-blue/10 p-[1rem]'>
-                        {messages.map((msg, idx) => (
-                            <div key={idx} className={`${msg.senderId === decode.uid ? 'text-right' : 'text-left'} `}>
-                                <div className={`${msg.senderId === decode.uid ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[.5rem] p-[1rem] rounded-md max-w-[200px]`}>
-                                    <div className='text-black' >
-                                        <b>{msg.senderId === adminId ? 'Admin' : `${selectedUser?.name}`}</b>
+                        <div className='h-[50rem] w-[90rem] p-[1rem] ml-[3rem] mr-[3rem]  rounded-md overflow-y-scroll space-x-4 shadow-md bg-white/10 p-[1rem]'>
+                            {messages.map((msg, idx) => (
+                                <div key={idx} className={`${msg.senderId === decode.uid ? 'text-right' : 'text-left'} `}>
+                                    <div className={`${msg.senderId === decode.uid ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[1rem] p-[1rem] rounded-md max-w-[200px]`}>
+                                        <div className='text-black' >
+                                            <b>{msg.senderId === adminId ? 'Admin' : `${selectedUser?.name}`}</b>
+                                        </div>
+                                        <div className='text-black'>{msg.message}</div>
+                                        <div className='text-[.7rem] text-gray-400'>
+                                            {new Date(msg.sentAt).toLocaleTimeString()}
+                                        </div>
                                     </div>
-                                    <div className='text-black'>{msg.message}</div>
-                                    <div className='text-[.7rem] text-gray-400'>
-                                        {new Date(msg.sentAt).toLocaleTimeString()}
-                                    </div>
+
                                 </div>
-                            
-                            </div>
-                        ))}
-                        
-                        <div />
-                        
-                    </div>
+                            ))}
+                           
+                            <div />
+                         
+                        </div>
 
-                    <div className='flex justify-center items-center gap-[1rem] mt-[1rem]'>
-                        <input
-                            type="text"
-                            value={input}
-                            onChange={e => setInput(e.target.value)}
-                            placeholder="Type a message"
-                            className='p-[1rem] w-[70%] outline-none bg-gray-100 rounded-md text-black shadow-lg'
-                        />
-                        <button onClick={sendMessage} className="bg-red-400 p-[1rem] w-[5%]  rounded-md font-bold shadow-md text-white hover:bg-red-300 cursor-pointer">
-                            Send
-                        </button>
-                    </div>
-                </div>) : (<div className='mt-[20%] ml-[50%]'>Select user to chat with</div>)}
-                
+                        <div className='flex justify-center items-center gap-[1rem] mt-[1rem]'>
+                            <input
+                                type="text"
+                                value={input}
+                                onChange={e => setInput(e.target.value)}
+                                placeholder="Type a message"
+                                className='p-[1rem] w-[70%] outline-none bg-white/10 rounded-md shadow-lg'
+                            />
+                            <button onClick={sendMessage} className="bg-red-400 p-[1rem] w-[5%]  rounded-md font-bold shadow-md text-white hover:bg-red-300 cursor-pointer">
+                                Send
+                            </button>
+                        </div>
+                    </div>) : (<div className='mt-[20%] ml-[50%]'>Select user to chat with</div>)}
+
             </div>
+            <Cart/>
 
             <Footer className="flex-end" />
         </div>

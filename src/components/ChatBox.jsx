@@ -5,6 +5,7 @@ import { jwtDecode } from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
 import Nav2 from './Nav2';
 import Footer from './Footer';
+import Cart from './Cart';
 
 const ChatBox = ({ adminId }) => {
   const [connection, setConnection] = useState(null);
@@ -93,10 +94,10 @@ const ChatBox = ({ adminId }) => {
       
       <div className='w-[100vw] h-[100vh] flex flex-col justify-center items-center'>
         <h1 className=' font-bold text-2xl m-[1rem] text-center mt-[3rem]'>Support</h1>
-        <div className='h-[75%] w-[70%] p-[1rem] ml-[3rem] mr-[3rem] bg-blue-/10 rounded-md overflow-y-scroll space-x-4 shadow-md p-[1rem]'>
+        <div className='h-[75%] w-[70%] p-[1rem] ml-[3rem] mr-[3rem] bg-white/10 rounded-md overflow-y-scroll space-x-4 shadow-md p-[1rem]'>
           {messages.map((msg, index) => (
             <div key={index} className={`${msg.senderId === decode.uid ? 'text-right' : 'text-left'} `}>
-              <div className={`${msg.senderId === decode.uid ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[.5rem] p-[1rem] rounded-md max-w-[200px]`}>
+              <div className={`${msg.senderId === decode.uid ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[1rem] p-[1rem] rounded-md max-w-[200px]`}>
                 <div className='text-black' ><b>{msg.senderId === decode.uid ? 'You' : 'Admin'}</b></div>
                 <div className='text-black'>{msg.message}</div>
                 <div className='text-[.7rem] text-gray-400' >
@@ -118,6 +119,7 @@ const ChatBox = ({ adminId }) => {
           <button onClick={sendMessage} className="bg-red-400 p-[1rem] w-[5%]  rounded-md font-bold shadow-md text-white hover:bg-red-300 cursor-pointer">Send</button>
         </div>
       </div>
+      <Cart/>
       <Footer/>
     </div>
   );

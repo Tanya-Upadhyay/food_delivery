@@ -4,6 +4,8 @@ const API_BASE = import.meta.env.VITE_BASE_URL;
 const token = localStorage.getItem("authToken");
 const decode = token ? jwtDecode(token) : null;
 export const fetchOrder = async () => {
+  const token = localStorage.getItem("authToken");
+  const decode = token ? jwtDecode(token) : null;
   const res = await axios.get(`${API_BASE}/api/Orders/${decode.uid}`, {
     headers: {
       Authorization: `Bearer ${token}`,

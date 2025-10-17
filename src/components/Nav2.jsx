@@ -46,7 +46,7 @@ function Nav2() {
     newConnection.start()
       .then(() => {
 
-        return newConnection.invoke('Join', decode.uid);
+        return newConnection.invoke('Join', decode?.uid);
       })
       .then(() => {
 
@@ -118,7 +118,7 @@ function Nav2() {
           </ul>
         </div>
 
-        <div className={`flex gap-[1rem] ${decode?.roles ==="user" ? "md:ml-[20%]" : "md:ml-[26%]" }  ml-[3%] `}>
+        <div className={`flex gap-[1rem] ${decode?.roles ==="user" ? "md:ml-[17%]" : "md:ml-[26%]" }  ml-[3%] `}>
           <div >
             <ThemeController />
           </div>
