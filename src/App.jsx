@@ -11,6 +11,7 @@ import Payment from './components/Payment';
 import AdminPanel from './components/AdminPanel';
 import ChatBox from './components/ChatBox';
 import ChatDashboard from './components/ChatDashboard';
+import ForgotPassword from './components/ForgotPassword';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path = '/admin' element={<AdminPanel/>}></Route>
           <Route path = '/chatbox' element={<ChatBox/>}></Route>
           <Route path = '/chatdashboard' element={<ChatDashboard/>}></Route>
+          <Route path = '/forgot' element={<ForgotPassword/>}></Route>
         </Routes>
       </Router>
       

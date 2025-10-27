@@ -54,6 +54,9 @@ function Login() {
         <div className='underline underline-offset-4 '>
           <Link to="/signup">Sign up</Link>
         </div>
+        <div className='underline underline-offset-4'>
+          <Link to="/forgot">Forget Password</Link>
+        </div>
       </div>
       </div>
       

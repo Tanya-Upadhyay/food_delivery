@@ -67,25 +67,20 @@ function Nav2() {
   }, []);
   
   const handleMarkAsRead = async () => {
-    try {
-      await axios.post(`${API_BASE}/api/chat/mark-as-read`, adminId,{
-        params: {
-          senderId: adminId,
-          receiverId: `${decode?.uid}`
-        },
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
+  try {
+    await axios.post(`${API_BASE}/api/chat/mark-as-read`, null, {
+      params: {
+        senderId: adminId,
+        receiverId: `${decode?.uid}`
+      },
+      headers: { Authorization: `Bearer ${token}` }
+    });
+    setUnreadCount(0);
+  } catch (error) {
+    console.error("Failed to mark messages as read", error);
+  }
+};
 
-      setUnreadCount(prev => ({
-                                ...prev,
-                                [`${decode?.uid}`]: 0
-                            }));
-    } catch (error) {
-      console.error("Failed to mark messages as read", error);
-    }
-  };
 
   return (
     <div className='fixed bg-base-100 dark:bg-base-200 w-[100vw] sm:w-[100vw] md:w-[100vw] flex justify-between z-50'>
@@ -118,7 +113,7 @@ function Nav2() {
           </ul>
         </div>
 
-        <div className={`flex gap-[1rem] ${decode?.roles ==="user" ? "md:ml-[17%]" : "md:ml-[26%]" }  ml-[3%] `}>
+        <div className={`flex gap-[1rem] ${decode?.roles ==="user" ? "md:ml-[20%]" : "md:ml-[23%]" }  ml-[3%] `}>
           <div >
             <ThemeController />
           </div>

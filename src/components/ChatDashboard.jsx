@@ -84,7 +84,6 @@ const ChatDashboard = () => {
         };
     }, []);
 
-
     useEffect(() => {
         const fetchMessages = async () => {
             if (!selectedUser) return;
@@ -93,7 +92,6 @@ const ChatDashboard = () => {
                     params: { UID1: adminId, UID2: `${selectedUser.uid}` },
                     headers: { Authorization: `Bearer ${token}` }
                 });
-
                 setMessages(res.data);
             } catch (err) {
                 console.error('Failed to fetch messages:', err);
@@ -125,8 +123,8 @@ const ChatDashboard = () => {
     });
     useEffect(() => {
         setUnreadCounts(0);
-
     }, [selectedUser]);
+
     useEffect(() => {
         const fetchUnreadCounts = async () => {
             try {
@@ -144,6 +142,7 @@ const ChatDashboard = () => {
 
         fetchUnreadCounts();
     }, [messages]);
+
     return (
         <div className="overflow-hidden min-h-screen flex flex-col justify-between">
             <Nav2 />
@@ -159,7 +158,6 @@ const ChatDashboard = () => {
                                 axios.post(`${API_BASE}/api/chat/mark-as-read?senderId=${user.uid}`, null, {
                                     headers: { Authorization: `Bearer ${token}` }
                                 });
-
                                 setUnreadCounts(prev => ({
                                     ...prev,
                                     [user.uid]: 0
@@ -184,10 +182,10 @@ const ChatDashboard = () => {
                     <div className={`p-5 ml-[22rem] md:ml-[30rem] mt-[6rem]`}>
                         <h3 className='ml-[4rem]'>Chat with: {selectedUser?.name}</h3>
 
-                        <div className='h-[50rem] w-[90rem] p-[1rem] ml-[3rem] mr-[3rem]  rounded-md overflow-y-scroll space-x-4 shadow-md bg-white/10 p-[1rem]'>
+                        <div className='h-[50rem] w-[80rem] p-[1rem] ml-[3rem] mr-[3rem]  rounded-md overflow-y-scroll space-x-4 shadow-md bg-white/10 p-[1rem]'>
                             {messages.map((msg, idx) => (
-                                <div key={idx} className={`${msg.senderId === decode.uid ? 'text-right' : 'text-left'} `}>
-                                    <div className={`${msg.senderId === decode.uid ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[1rem] p-[1rem] rounded-md max-w-[200px]`}>
+                                <div key={idx} className={`${msg.senderId === adminId ? 'text-right' : 'text-left'} `}>
+                                    <div className={`${msg.senderId === adminId ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[1rem] p-[1rem] rounded-md max-w-[200px]`}>
                                         <div className='text-black' >
                                             <b>{msg.senderId === adminId ? 'Admin' : `${selectedUser?.name}`}</b>
                                         </div>
@@ -196,12 +194,9 @@ const ChatDashboard = () => {
                                             {new Date(msg.sentAt).toLocaleTimeString()}
                                         </div>
                                     </div>
-
                                 </div>
                             ))}
-                           
-                            <div />
-                         
+                            <div/>
                         </div>
 
                         <div className='flex justify-center items-center gap-[1rem] mt-[1rem]'>
@@ -217,7 +212,6 @@ const ChatDashboard = () => {
                             </button>
                         </div>
                     </div>) : (<div className='mt-[20%] ml-[50%]'>Select user to chat with</div>)}
-
             </div>
             <Cart/>
 

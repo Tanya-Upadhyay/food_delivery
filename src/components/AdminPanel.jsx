@@ -45,8 +45,6 @@ function AdminPanel() {
               <UpdateOrderStatus />}
             {activeSections == "addProducts" &&
               <AddProducts />}
-             
-
             <ToastContainer position="top-center" />
             <Cart />
           </div>

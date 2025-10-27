@@ -77,8 +77,7 @@ function Order({ order, isExpanded, onToggle }) {
     <div className="mt-[6rem]">
       <div
         className="p-4 ml-[34vw] mr-[22vw] border border-white rounded-lg shadow-md w-[60%] md:w-[50%]"
-        ref={invoiceRef}
-      >
+        ref={invoiceRef}>
         {isExpanded && (
           <div className="w-[70%] md:w-[50%]">
             <div><strong>Name: </strong>{userName}</div>
@@ -142,22 +141,19 @@ function Order({ order, isExpanded, onToggle }) {
         <div className="flex justify-between m-[1rem]">
           <button
             onClick={onToggle}
-            className="bg-red-400 p-[.7rem] w-[30%] md:w-[20%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer"
-          >
+            className="bg-red-400 p-[.7rem] w-[30%] md:w-[20%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer">
             {isExpanded ? "Hide Details" : "View Details"}
           </button>
 
           <button
             onClick={toggleTracker}
-            className="bg-blue-500 p-[.7rem] w-[30%] md:w-[20%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer"
-          >
+            className="bg-blue-500 p-[.7rem] w-[30%] md:w-[20%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer">
             Track Your Order
           </button>
 
           <button
             onClick={handleDownload}
-            className="bg-green-500 p-[.7rem] w-[30%] md:w-[20%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500cursor-pointer"
-          >
+            className="bg-green-500 p-[.7rem] w-[30%] md:w-[20%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500cursor-pointer">
             Download Invoice
           </button>
         </div>

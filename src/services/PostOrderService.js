@@ -1,18 +1,20 @@
 import axios from "axios";
 import { CreatePayment } from "./PaymentController";
-
-
+const token = localStorage.getItem("authToken");
+const API_BASE = import.meta.env.VITE_BASE_URL;
 export const postOrder = async (orderItems) => {
+  console.log(orderItems)
   const token = localStorage.getItem("authToken");
   const res = await axios.post(`${API_BASE}/api/Orders`, orderItems, {
     headers: {
       Authorization: `Bearer ${token}`
     }
   });
+  
   return res.data;
 };
 
-export const PostOnlineOrder = async (amount) => {
+export const PostOnlineOrder = async (amount,orderItems) => {
   const paymentOrder = await CreatePayment(amount);
   console.log("Payment order response:", paymentOrder);
 
@@ -23,16 +25,17 @@ export const PostOnlineOrder = async (amount) => {
 
   
   const options = {
+    
     key: import.meta.env.VITE_RAZORPAY_KEY, 
     amount: amt.toString(),                 
     currency: currency,
-    name: "Your Shop Name",
+    name: "Fast Food Delivery",
     description: "Purchase Description",
     order_id: orderId,                      
     handler: async (response) => {
       console.log("Razorpay response:", response);
       
-      await axios.post(`${API_BASE}/api/Payment/verify`, {
+      const res =await axios.post(`${API_BASE}/api/Payment/verify`, {
         orderId: response.razorpay_order_id,
         paymentId: response.razorpay_payment_id,
         signature: response.razorpay_signature,
@@ -43,7 +46,7 @@ export const PostOnlineOrder = async (amount) => {
           Authorization: `Bearer ${token}`
         }
       });
-
+      await postOrder(orderItems);
       
     },
     prefill: {
@@ -54,7 +57,9 @@ export const PostOnlineOrder = async (amount) => {
       color: "#3399cc"
     }
   };
-
+  
   const rz = new window.Razorpay(options);
   rz.open();
+
+  
 };

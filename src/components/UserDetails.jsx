@@ -33,7 +33,11 @@ function UserDetails() {
 
   const handleUserDetailsSave = async () => {
     try {
-      const res = await axios.put(`${API_BASE}/api/Users/${decode.uid}`, userFormData);
+      const res = await axios.put(`${API_BASE}/api/Users/${decode.uid}`, userFormData, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        }
+      });
       setIsEditing(false);
       setUserDetails(res.data);
       fetchUser()
