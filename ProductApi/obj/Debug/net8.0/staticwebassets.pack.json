@@ -1,0 +1,285 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\135cec77-9fcd-497c-ab92-caf88994899e_Mushroom-Pizza.jpg",
+      "PackagePath": "staticwebassets\\images\\135cec77-9fcd-497c-ab92-caf88994899e_Mushroom-Pizza.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\1876ea4e-19d9-40cb-b316-845d71c5f46b_img29.webp",
+      "PackagePath": "staticwebassets\\images\\1876ea4e-19d9-40cb-b316-845d71c5f46b_img29.webp"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\1c767721-bc79-4354-b23b-18c69605880f_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\1c767721-bc79-4354-b23b-18c69605880f_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\241befe6-1b27-414d-bd04-60521a7fd437_img25.jpg",
+      "PackagePath": "staticwebassets\\images\\241befe6-1b27-414d-bd04-60521a7fd437_img25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\2c49eb42-dcb6-4580-9530-76790442a655_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\2c49eb42-dcb6-4580-9530-76790442a655_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\32f52a85-b490-49f8-b03d-39e678037db8_img23.webp",
+      "PackagePath": "staticwebassets\\images\\32f52a85-b490-49f8-b03d-39e678037db8_img23.webp"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\330353ef-3d33-443d-a093-224024097de0_img21.webp",
+      "PackagePath": "staticwebassets\\images\\330353ef-3d33-443d-a093-224024097de0_img21.webp"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\375e8bf2-5cb4-4c4f-95c7-67f4e387de32_img28.jpg",
+      "PackagePath": "staticwebassets\\images\\375e8bf2-5cb4-4c4f-95c7-67f4e387de32_img28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\37665e6f-6c42-459c-9338-954b23ad32e3_pexels-souvenirpixels-414612.jpg",
+      "PackagePath": "staticwebassets\\images\\37665e6f-6c42-459c-9338-954b23ad32e3_pexels-souvenirpixels-414612.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\37ef3da6-6b12-4bbc-90b4-798d70630f8c_grilled.jpeg",
+      "PackagePath": "staticwebassets\\images\\37ef3da6-6b12-4bbc-90b4-798d70630f8c_grilled.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\3a396b5d-98d7-4f6f-bb19-43cdd71feeec_img30.jpg",
+      "PackagePath": "staticwebassets\\images\\3a396b5d-98d7-4f6f-bb19-43cdd71feeec_img30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\3ddb92e5-5d6a-4f62-ae4f-f349887e4f47_img14.webp",
+      "PackagePath": "staticwebassets\\images\\3ddb92e5-5d6a-4f62-ae4f-f349887e4f47_img14.webp"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\3f01c3cd-031a-4843-b849-75cbe1438912_img20.jpg",
+      "PackagePath": "staticwebassets\\images\\3f01c3cd-031a-4843-b849-75cbe1438912_img20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\41514199-5424-4929-872b-9e17344d1639_9ip5NnGk-1280.jpg",
+      "PackagePath": "staticwebassets\\images\\41514199-5424-4929-872b-9e17344d1639_9ip5NnGk-1280.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\42948ef2-0a10-4ab6-b526-65fe5de6e377_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\42948ef2-0a10-4ab6-b526-65fe5de6e377_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\436c3592-11ad-4178-b1dc-2002e1e6504b_img4.webp",
+      "PackagePath": "staticwebassets\\images\\436c3592-11ad-4178-b1dc-2002e1e6504b_img4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\44454413-77f3-4376-b5f0-b1359db550bd_img19.jpg",
+      "PackagePath": "staticwebassets\\images\\44454413-77f3-4376-b5f0-b1359db550bd_img19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\4599c269-0b13-4594-bd8e-ee79429fec6a_img10.jpg",
+      "PackagePath": "staticwebassets\\images\\4599c269-0b13-4594-bd8e-ee79429fec6a_img10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\47dfb3fd-eee0-413a-a002-e584d538893c_Fresh-Veggie-Hummus-Wrap_-done.png",
+      "PackagePath": "staticwebassets\\images\\47dfb3fd-eee0-413a-a002-e584d538893c_Fresh-Veggie-Hummus-Wrap_-done.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\4b5377e9-316d-40c0-ab8d-67a4b3d4bfa7_img6.jpg",
+      "PackagePath": "staticwebassets\\images\\4b5377e9-316d-40c0-ab8d-67a4b3d4bfa7_img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\4f89e5e7-2c88-4aa0-b834-7d8c42bea260_img13.jpg",
+      "PackagePath": "staticwebassets\\images\\4f89e5e7-2c88-4aa0-b834-7d8c42bea260_img13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\4fe9bba6-4e14-47f4-aeae-e02a8d6746df_img12.jpg",
+      "PackagePath": "staticwebassets\\images\\4fe9bba6-4e14-47f4-aeae-e02a8d6746df_img12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\57ee2669-caa3-41de-80f9-ecab92948a40_img10.jpg",
+      "PackagePath": "staticwebassets\\images\\57ee2669-caa3-41de-80f9-ecab92948a40_img10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\583a1da7-56d8-4188-a54c-60c7a686d505_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\583a1da7-56d8-4188-a54c-60c7a686d505_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\657942f6-6e46-41d3-8ff5-a8360f9bea52_image7.avif",
+      "PackagePath": "staticwebassets\\images\\657942f6-6e46-41d3-8ff5-a8360f9bea52_image7.avif"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\6767316e-b012-4942-9728-bb3549298903_img22.jpg",
+      "PackagePath": "staticwebassets\\images\\6767316e-b012-4942-9728-bb3549298903_img22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\6a180dda-d8a5-42ab-8c09-423946a81086_img8.jpg",
+      "PackagePath": "staticwebassets\\images\\6a180dda-d8a5-42ab-8c09-423946a81086_img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\6a82af33-93ef-4baa-a5a7-7dd47e5cb1cb_img16.jpg",
+      "PackagePath": "staticwebassets\\images\\6a82af33-93ef-4baa-a5a7-7dd47e5cb1cb_img16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\6abe4f73-02b7-4cc4-b825-01eff4b33407_img32.jpg",
+      "PackagePath": "staticwebassets\\images\\6abe4f73-02b7-4cc4-b825-01eff4b33407_img32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\6b37a9eb-83d6-4eba-b4a3-5a2be4a6a34c_img3.jpg",
+      "PackagePath": "staticwebassets\\images\\6b37a9eb-83d6-4eba-b4a3-5a2be4a6a34c_img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\6ccb140a-c244-44ae-b029-2a871d70a8de_img26.jpg",
+      "PackagePath": "staticwebassets\\images\\6ccb140a-c244-44ae-b029-2a871d70a8de_img26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\7105e0d8-419c-4919-ba6d-ec76b5aa8793_img27.jpg",
+      "PackagePath": "staticwebassets\\images\\7105e0d8-419c-4919-ba6d-ec76b5aa8793_img27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\783e7fea-ded3-4ac6-9ced-b0f5be09b46d_img18.jpg",
+      "PackagePath": "staticwebassets\\images\\783e7fea-ded3-4ac6-9ced-b0f5be09b46d_img18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\805e9fb8-d5cb-4cf6-9a93-906b378c66e0_img14.jpg",
+      "PackagePath": "staticwebassets\\images\\805e9fb8-d5cb-4cf6-9a93-906b378c66e0_img14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\8cc32fb1-ae9a-418a-8748-7dc86b45667d_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\8cc32fb1-ae9a-418a-8748-7dc86b45667d_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\9a7a9b74-8a46-4a7d-a232-b87687ddfb61_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\9a7a9b74-8a46-4a7d-a232-b87687ddfb61_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\a06abcf0-9df9-444c-be09-b9672f539f26_img3.png",
+      "PackagePath": "staticwebassets\\images\\a06abcf0-9df9-444c-be09-b9672f539f26_img3.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\acc4622d-8cab-4bc1-bd2f-7e2b9df6fa79_image14.webp",
+      "PackagePath": "staticwebassets\\images\\acc4622d-8cab-4bc1-bd2f-7e2b9df6fa79_image14.webp"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\b4db44f5-bac3-47c3-ab63-761f3ab81831_image1.avif",
+      "PackagePath": "staticwebassets\\images\\b4db44f5-bac3-47c3-ab63-761f3ab81831_image1.avif"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\b9236858-6a06-45d0-95b8-e96a912cb558_grilled.jpeg",
+      "PackagePath": "staticwebassets\\images\\b9236858-6a06-45d0-95b8-e96a912cb558_grilled.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\bd9a8d4a-337a-41d4-befb-409a478245d7_grilled.jpeg",
+      "PackagePath": "staticwebassets\\images\\bd9a8d4a-337a-41d4-befb-409a478245d7_grilled.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\c161b802-ab73-438d-a346-d771f4999827_img6.webp",
+      "PackagePath": "staticwebassets\\images\\c161b802-ab73-438d-a346-d771f4999827_img6.webp"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\c4ba4559-c6a1-4d5f-9ed5-47d60a236b6c_img13.jpg",
+      "PackagePath": "staticwebassets\\images\\c4ba4559-c6a1-4d5f-9ed5-47d60a236b6c_img13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\c5575ac7-f32e-4e66-bf79-95d0fd023db8_img10.jpg",
+      "PackagePath": "staticwebassets\\images\\c5575ac7-f32e-4e66-bf79-95d0fd023db8_img10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\c6cda714-eec4-4d1c-9045-cecd67e1e907_img18.jpg",
+      "PackagePath": "staticwebassets\\images\\c6cda714-eec4-4d1c-9045-cecd67e1e907_img18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\c7e3dd64-5f76-4678-aa24-9aace15a5c25_garlic-butter-naan-4.jpg",
+      "PackagePath": "staticwebassets\\images\\c7e3dd64-5f76-4678-aa24-9aace15a5c25_garlic-butter-naan-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\c8878070-4152-4cf3-8325-8ec4f643b886_traditional-italian-pizza.jpeg",
+      "PackagePath": "staticwebassets\\images\\c8878070-4152-4cf3-8325-8ec4f643b886_traditional-italian-pizza.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\cb37d889-a523-4d8f-892a-d3ca79d59c23_img14.jpg",
+      "PackagePath": "staticwebassets\\images\\cb37d889-a523-4d8f-892a-d3ca79d59c23_img14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\cc6497a3-20ea-4243-b490-915e169ac4fc_download.jpg",
+      "PackagePath": "staticwebassets\\images\\cc6497a3-20ea-4243-b490-915e169ac4fc_download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\cffc595e-3342-4a02-94ac-8530477107b9_cheese-burger.png",
+      "PackagePath": "staticwebassets\\images\\cffc595e-3342-4a02-94ac-8530477107b9_cheese-burger.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\d68dbe22-255d-4e6a-86a5-64ecf4ba2fed_img17.jpg",
+      "PackagePath": "staticwebassets\\images\\d68dbe22-255d-4e6a-86a5-64ecf4ba2fed_img17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\d7868e71-5caa-4338-9e62-1106bf71d10c_img23.avif",
+      "PackagePath": "staticwebassets\\images\\d7868e71-5caa-4338-9e62-1106bf71d10c_img23.avif"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\d7e61bb5-65dc-4d10-bc91-96ea3ac5fd32_img11.jpg",
+      "PackagePath": "staticwebassets\\images\\d7e61bb5-65dc-4d10-bc91-96ea3ac5fd32_img11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\e19d8f7c-2a24-42ed-bbb9-ebb608b1bac5_img7.jpg",
+      "PackagePath": "staticwebassets\\images\\e19d8f7c-2a24-42ed-bbb9-ebb608b1bac5_img7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\e44412d0-43b3-4906-8f5e-affe9e2cafe5_img31.jpg",
+      "PackagePath": "staticwebassets\\images\\e44412d0-43b3-4906-8f5e-affe9e2cafe5_img31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\e66709ea-b322-4631-8ab7-939a5a42cc44_img15.jpg",
+      "PackagePath": "staticwebassets\\images\\e66709ea-b322-4631-8ab7-939a5a42cc44_img15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\eafadf48-c6d3-44b5-943d-fadc5388d914_pexels-souvenirpixels-414612.jpg",
+      "PackagePath": "staticwebassets\\images\\eafadf48-c6d3-44b5-943d-fadc5388d914_pexels-souvenirpixels-414612.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\eb8e7201-82c7-4af3-83a5-dd77dc50e616_img9.jpg",
+      "PackagePath": "staticwebassets\\images\\eb8e7201-82c7-4af3-83a5-dd77dc50e616_img9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\eba45a52-03c3-4d33-94e0-a1b73ba0693f_White-Sauce-Pasta.jpg",
+      "PackagePath": "staticwebassets\\images\\eba45a52-03c3-4d33-94e0-a1b73ba0693f_White-Sauce-Pasta.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\f1f57240-1775-4355-94a5-05437679bed6_veg cheese burger.jpg",
+      "PackagePath": "staticwebassets\\images\\f1f57240-1775-4355-94a5-05437679bed6_veg cheese burger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\f28d349a-f94c-4caf-ad9c-632797b4628d_img5.jpg",
+      "PackagePath": "staticwebassets\\images\\f28d349a-f94c-4caf-ad9c-632797b4628d_img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\f3a58da4-cba8-475f-a9d8-cd1dfb1734df_grilled.jpeg",
+      "PackagePath": "staticwebassets\\images\\f3a58da4-cba8-475f-a9d8-cd1dfb1734df_grilled.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\f5c2b7f4-51a9-4f13-a1bc-471dc137a6fe_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\f5c2b7f4-51a9-4f13-a1bc-471dc137a6fe_img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\f7a4ffd6-319d-4b16-8e0f-4c22f5084459_grilled.jpeg",
+      "PackagePath": "staticwebassets\\images\\f7a4ffd6-319d-4b16-8e0f-4c22f5084459_grilled.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\fa957ffc-1159-4415-ab29-c8758686bfa8_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\fa957ffc-1159-4415-ab29-c8758686bfa8_img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\wwwroot\\images\\fb27f667-13c2-4036-a48d-44a208d1c692_img24.webp",
+      "PackagePath": "staticwebassets\\images\\fb27f667-13c2-4036-a48d-44a208d1c692_img24.webp"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProductApi.props",
+      "PackagePath": "build\\ProductApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductApi.props",
+      "PackagePath": "buildMultiTargeting\\ProductApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProductApi.props",
+      "PackagePath": "buildTransitive\\ProductApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

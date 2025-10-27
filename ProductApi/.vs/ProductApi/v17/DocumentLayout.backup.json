@@ -1,0 +1,1344 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\forgetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\forgetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\orderplacedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\orderplacedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\verifypaymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\verifypaymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\data\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:data\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\emailverificationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\emailverificationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\emailverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\emailverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\data\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:data\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\data\\ichatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:data\\ichatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\ordertrackerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\ordertrackerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251013084330_updating chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251013084330_updating chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\control\\usercredentialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:control\\usercredentialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\bestsellerproductsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\bestsellerproductsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\addressisprimarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\addressisprimarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\userroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\userroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251004084858_update-roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251004084858_update-roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\ordertracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\ordertracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\models\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:models\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250929112711_update_address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250929112711_update_address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250909060217_orders3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250909060217_orders3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250909044630_orders2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250909044630_orders2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250909093653_updatingordertracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250909093653_updatingordertracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250909092316_migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250909092316_migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250909120859_bsshogyamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250909120859_bsshogyamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250909115824_orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250909115824_orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910073301_orderupdating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910073301_orderupdating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910072858_sbupdatekrdobhai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910072858_sbupdatekrdobhai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910072048_updateorderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910072048_updateorderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910062806_addressupdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910062806_addressupdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910055212_orderitemsandorderupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910055212_orderitemsandorderupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910054527_addressupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910054527_addressupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910053520_updatingtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910053520_updatingtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910045337_orderupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910045337_orderupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910045046_orderitemupdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910045046_orderitemupdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250910044327_orderitemupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250910044327_orderitemupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250911044427_updatedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250911044427_updatedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250915072759_addingstaticfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250915072759_addingstaticfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250915065103_image3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250915065103_image3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250915064638_image2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250915064638_image2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250915054602_addimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250915054602_addimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250917063802_image_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250917063802_image_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250918083355_updatingorderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250918083355_updatingorderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250919062356_addressesupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250919062356_addressesupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250919110706_justanupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250919110706_justanupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20250924101142_passwordupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20250924101142_passwordupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251004084545_roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251004084545_roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251004055716_stocks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251004055716_stocks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251004053007_updating user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251004053007_updating user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251004091040_updating-roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251004091040_updating-roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251006093954_updating products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251006093954_updating products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251008100814_update-active-products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251008100814_update-active-products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251008100609_productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251008100609_productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251013070629_chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251013070629_chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251014043334_messageupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251014043334_messageupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251017110645_payment-gateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251017110645_payment-gateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|c:\\users\\administrator\\source\\repos\\productapi\\migrations\\20251017050958_emailverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15D93D7D-855E-4C91-ADBE-DFAEAB9A8FBF}|ProductApi.csproj|solutionrelative:migrations\\20251017050958_emailverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResetPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\ResetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "Models\\ResetPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\ResetPasswordRequest.cs",
+              "RelativeToolTip": "Models\\ResetPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T08:50:56.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ForgetPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\ForgetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "Models\\ForgetPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\ForgetPasswordRequest.cs",
+              "RelativeToolTip": "Models\\ForgetPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T08:50:03.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\ChatController.cs",
+              "RelativeDocumentMoniker": "Control\\ChatController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\ChatController.cs",
+              "RelativeToolTip": "Control\\ChatController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T09:07:57.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\AuthController.cs",
+              "RelativeDocumentMoniker": "Control\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\AuthController.cs",
+              "RelativeToolTip": "Control\\AuthController.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAowNIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T12:09:32.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddressesController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\AddressesController.cs",
+              "RelativeDocumentMoniker": "Control\\AddressesController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\AddressesController.cs",
+              "RelativeToolTip": "Control\\AddressesController.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAA5wBIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T05:25:20.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\UsersController.cs",
+              "RelativeDocumentMoniker": "Control\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\UsersController.cs",
+              "RelativeToolTip": "Control\\UsersController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAcwEgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:28:55.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAwwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T11:56:27.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T05:22:04.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Cart.cs",
+              "RelativeToolTip": "Models\\Cart.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T04:38:31.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Control\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\OrdersController.cs",
+              "RelativeToolTip": "Control\\OrdersController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwF0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T11:25:06.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderPlaceDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\OrderPlaceDto.cs",
+              "RelativeDocumentMoniker": "Models\\OrderPlaceDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\OrderPlaceDto.cs",
+              "RelativeToolTip": "Models\\OrderPlaceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:06:09.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T06:20:57.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VerifyPaymentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\VerifyPaymentRequest.cs",
+              "RelativeDocumentMoniker": "Models\\VerifyPaymentRequest.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\VerifyPaymentRequest.cs",
+              "RelativeToolTip": "Models\\VerifyPaymentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T10:56:48.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateOrderRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\CreateOrderRequest.cs",
+              "RelativeDocumentMoniker": "Models\\CreateOrderRequest.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\CreateOrderRequest.cs",
+              "RelativeToolTip": "Models\\CreateOrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T10:41:24.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Control\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\PaymentController.cs",
+              "RelativeToolTip": "Control\\PaymentController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwCUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T10:34:45.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "20251017110645_payment-gateway.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251017110645_payment-gateway.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251017110645_payment-gateway.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251017110645_payment-gateway.cs",
+              "RelativeToolTip": "Migrations\\20251017110645_payment-gateway.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T11:06:45.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T10:26:45.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Control\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\ProductsController.cs",
+              "RelativeToolTip": "Control\\ProductsController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwGQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T06:57:00.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Services\\EmailService.cs",
+              "RelativeToolTip": "Services\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T05:19:35.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "Models\\Products.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Products.cs",
+              "RelativeToolTip": "Models\\Products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T06:30:47.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:37:35.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Data\\ProductDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ProductDbContext.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Data\\ProductDbContext.cs",
+              "RelativeToolTip": "Data\\ProductDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T11:40:26.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EmailVerificationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\EmailVerificationRequest.cs",
+              "RelativeDocumentMoniker": "Models\\EmailVerificationRequest.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\EmailVerificationRequest.cs",
+              "RelativeToolTip": "Models\\EmailVerificationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T05:11:30.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\CartController.cs",
+              "RelativeDocumentMoniker": "Control\\CartController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\CartController.cs",
+              "RelativeToolTip": "Control\\CartController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAcwCIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T11:25:01.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "20251017050958_EmailVerification.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251017050958_EmailVerification.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251017050958_EmailVerification.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251017050958_EmailVerification.cs",
+              "RelativeToolTip": "Migrations\\20251017050958_EmailVerification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T05:09:59.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EmailVerification.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\EmailVerification.cs",
+              "RelativeDocumentMoniker": "Models\\EmailVerification.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\EmailVerification.cs",
+              "RelativeToolTip": "Models\\EmailVerification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T05:05:16.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IChatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Data\\IChatRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IChatRepository.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Data\\IChatRepository.cs",
+              "RelativeToolTip": "Data\\IChatRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:12:05.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ChatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Data\\ChatRepository.cs",
+              "RelativeDocumentMoniker": "Data\\ChatRepository.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Data\\ChatRepository.cs",
+              "RelativeToolTip": "Data\\ChatRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDEAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:19:41.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "Models\\ChatMessage.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\ChatMessage.cs",
+              "RelativeToolTip": "Models\\ChatMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:02:00.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OrderTrackersController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\OrderTrackersController.cs",
+              "RelativeDocumentMoniker": "Control\\OrderTrackersController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\OrderTrackersController.cs",
+              "RelativeToolTip": "Control\\OrderTrackersController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA6wCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T08:57:07.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "20251014043334_messageupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251014043334_messageupdate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251014043334_messageupdate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251014043334_messageupdate.cs",
+              "RelativeToolTip": "Migrations\\20251014043334_messageupdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T04:33:34.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20251013084330_updating chatmessage.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251013084330_updating chatmessage.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251013084330_updating chatmessage.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251013084330_updating chatmessage.cs",
+              "RelativeToolTip": "Migrations\\20251013084330_updating chatmessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T08:43:30.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "Models\\JwtTokenGenerator.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "Models\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwB0AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T05:03:06.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserCredentialsController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\UserCredentialsController.cs",
+              "RelativeDocumentMoniker": "Control\\UserCredentialsController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Control\\UserCredentialsController.cs",
+              "RelativeToolTip": "Control\\UserCredentialsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAEBVwFEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T11:10:15.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "20251013070629_chatmessage.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251013070629_chatmessage.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251013070629_chatmessage.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251013070629_chatmessage.cs",
+              "RelativeToolTip": "Migrations\\20251013070629_chatmessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T07:06:29.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Address.cs",
+              "RelativeDocumentMoniker": "Models\\Address.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Address.cs",
+              "RelativeToolTip": "Models\\Address.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T04:59:37.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UserCredentials.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\UserCredentials.cs",
+              "RelativeDocumentMoniker": "Models\\UserCredentials.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\UserCredentials.cs",
+              "RelativeToolTip": "Models\\UserCredentials.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T10:09:48.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "Models\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\UserDto.cs",
+              "RelativeToolTip": "Models\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T10:25:45.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Models\\OrderItem.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:45:24.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AddressIsPrimaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\AddressIsPrimaryDto.cs",
+              "RelativeDocumentMoniker": "Models\\AddressIsPrimaryDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\AddressIsPrimaryDto.cs",
+              "RelativeToolTip": "Models\\AddressIsPrimaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T10:51:06.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BestSellerProductsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\BestSellerProductsDto.cs",
+              "RelativeDocumentMoniker": "Models\\BestSellerProductsDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\BestSellerProductsDto.cs",
+              "RelativeToolTip": "Models\\BestSellerProductsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T11:38:50.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProductCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\ProductCreateDto.cs",
+              "RelativeDocumentMoniker": "Models\\ProductCreateDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\ProductCreateDto.cs",
+              "RelativeToolTip": "Models\\ProductCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:57:36.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UserRoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\UserRoleDto.cs",
+              "RelativeDocumentMoniker": "Models\\UserRoleDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\UserRoleDto.cs",
+              "RelativeToolTip": "Models\\UserRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T06:19:49.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "20251008100814_update-active-products.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251008100814_update-active-products.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251008100814_update-active-products.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251008100814_update-active-products.cs",
+              "RelativeToolTip": "Migrations\\20251008100814_update-active-products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T10:08:14.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "20251008100609_productstatus.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251008100609_productstatus.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251008100609_productstatus.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251008100609_productstatus.cs",
+              "RelativeToolTip": "Migrations\\20251008100609_productstatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T10:06:09.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T09:38:29.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20251006093954_updating products.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251006093954_updating products.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251006093954_updating products.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251006093954_updating products.cs",
+              "RelativeToolTip": "Migrations\\20251006093954_updating products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T09:39:54.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20251004084858_update-roles.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004084858_update-roles.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251004084858_update-roles.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004084858_update-roles.cs",
+              "RelativeToolTip": "Migrations\\20251004084858_update-roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T08:48:59.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20251004091040_updating-roles.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004091040_updating-roles.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251004091040_updating-roles.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004091040_updating-roles.cs",
+              "RelativeToolTip": "Migrations\\20251004091040_updating-roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T09:10:40.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "20251004084545_roles.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004084545_roles.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251004084545_roles.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004084545_roles.cs",
+              "RelativeToolTip": "Migrations\\20251004084545_roles.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T08:45:45.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20251004055716_stocks.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004055716_stocks.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251004055716_stocks.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004055716_stocks.cs",
+              "RelativeToolTip": "Migrations\\20251004055716_stocks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T05:57:17.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "20251004053007_updating user.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004053007_updating user.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251004053007_updating user.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20251004053007_updating user.cs",
+              "RelativeToolTip": "Migrations\\20251004053007_updating user.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T05:30:07.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "OrderTracker.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\OrderTracker.cs",
+              "RelativeDocumentMoniker": "Models\\OrderTracker.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\OrderTracker.cs",
+              "RelativeToolTip": "Models\\OrderTracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T11:34:53.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CartItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\CartItemDto.cs",
+              "RelativeDocumentMoniker": "Models\\CartItemDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Models\\CartItemDto.cs",
+              "RelativeToolTip": "Models\\CartItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T06:19:59.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20250929112711_update_address.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250929112711_update_address.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250929112711_update_address.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250929112711_update_address.cs",
+              "RelativeToolTip": "Migrations\\20250929112711_update_address.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:27:11.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20250924101142_passwordupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250924101142_passwordupdate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250924101142_passwordupdate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250924101142_passwordupdate.cs",
+              "RelativeToolTip": "Migrations\\20250924101142_passwordupdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T10:11:42.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20250919110706_justanupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250919110706_justanupdate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250919110706_justanupdate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250919110706_justanupdate.cs",
+              "RelativeToolTip": "Migrations\\20250919110706_justanupdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T11:07:06.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20250919062356_addressesupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250919062356_addressesupdate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250919062356_addressesupdate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250919062356_addressesupdate.cs",
+              "RelativeToolTip": "Migrations\\20250919062356_addressesupdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T06:23:56.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20250915054602_addimage.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250915054602_addimage.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250915054602_addimage.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250915054602_addimage.cs",
+              "RelativeToolTip": "Migrations\\20250915054602_addimage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T05:46:03.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20250918083355_updatingorderitems.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250918083355_updatingorderitems.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250918083355_updatingorderitems.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250918083355_updatingorderitems.cs",
+              "RelativeToolTip": "Migrations\\20250918083355_updatingorderitems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T08:33:55.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20250917063802_image_update.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250917063802_image_update.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250917063802_image_update.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250917063802_image_update.cs",
+              "RelativeToolTip": "Migrations\\20250917063802_image_update.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T06:38:02.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "20250915064638_image2.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250915064638_image2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250915064638_image2.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250915064638_image2.cs",
+              "RelativeToolTip": "Migrations\\20250915064638_image2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:46:38.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "20250915065103_image3.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250915065103_image3.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250915065103_image3.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250915065103_image3.cs",
+              "RelativeToolTip": "Migrations\\20250915065103_image3.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:51:03.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20250915072759_AddingStaticFiles.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250915072759_AddingStaticFiles.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250915072759_AddingStaticFiles.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250915072759_AddingStaticFiles.cs",
+              "RelativeToolTip": "Migrations\\20250915072759_AddingStaticFiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:27:59.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20250911044427_updatedatabase.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250911044427_updatedatabase.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250911044427_updatedatabase.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250911044427_updatedatabase.cs",
+              "RelativeToolTip": "Migrations\\20250911044427_updatedatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T04:44:27.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "20250910072858_sbupdatekrdobhai.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910072858_sbupdatekrdobhai.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910072858_sbupdatekrdobhai.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910072858_sbupdatekrdobhai.cs",
+              "RelativeToolTip": "Migrations\\20250910072858_sbupdatekrdobhai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T07:28:58.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20250910073301_orderupdating.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910073301_orderupdating.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910073301_orderupdating.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910073301_orderupdating.cs",
+              "RelativeToolTip": "Migrations\\20250910073301_orderupdating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T07:33:02.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20250910072048_updateorderitem.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910072048_updateorderitem.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910072048_updateorderitem.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910072048_updateorderitem.cs",
+              "RelativeToolTip": "Migrations\\20250910072048_updateorderitem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T07:20:48.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20250910062806_addressupdate2.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910062806_addressupdate2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910062806_addressupdate2.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910062806_addressupdate2.cs",
+              "RelativeToolTip": "Migrations\\20250910062806_addressupdate2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T06:28:06.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20250910055212_orderitemsandorderupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910055212_orderitemsandorderupdate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910055212_orderitemsandorderupdate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910055212_orderitemsandorderupdate.cs",
+              "RelativeToolTip": "Migrations\\20250910055212_orderitemsandorderupdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T05:52:12.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20250910054527_addressupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910054527_addressupdate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910054527_addressupdate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910054527_addressupdate.cs",
+              "RelativeToolTip": "Migrations\\20250910054527_addressupdate.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T05:45:27.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20250910053520_updatingtables.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910053520_updatingtables.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910053520_updatingtables.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910053520_updatingtables.cs",
+              "RelativeToolTip": "Migrations\\20250910053520_updatingtables.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T05:35:20.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20250910045337_orderupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910045337_orderupdate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910045337_orderupdate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910045337_orderupdate.cs",
+              "RelativeToolTip": "Migrations\\20250910045337_orderupdate.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T04:53:37.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "20250910045046_orderitemupdate2.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910045046_orderitemupdate2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910045046_orderitemupdate2.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910045046_orderitemupdate2.cs",
+              "RelativeToolTip": "Migrations\\20250910045046_orderitemupdate2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T04:50:46.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20250910044327_orderitemupdate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910044327_orderitemupdate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250910044327_orderitemupdate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250910044327_orderitemupdate.cs",
+              "RelativeToolTip": "Migrations\\20250910044327_orderitemupdate.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T04:43:28.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20250909115824_OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909115824_OrderItem.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250909115824_OrderItem.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909115824_OrderItem.cs",
+              "RelativeToolTip": "Migrations\\20250909115824_OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:58:24.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20250909120859_bsshogyamera.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909120859_bsshogyamera.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250909120859_bsshogyamera.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909120859_bsshogyamera.cs",
+              "RelativeToolTip": "Migrations\\20250909120859_bsshogyamera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwB8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T12:08:59.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20250909044630_orders2.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909044630_orders2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250909044630_orders2.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909044630_orders2.cs",
+              "RelativeToolTip": "Migrations\\20250909044630_orders2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T04:46:30.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20250909060217_orders3.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909060217_orders3.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250909060217_orders3.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909060217_orders3.cs",
+              "RelativeToolTip": "Migrations\\20250909060217_orders3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T06:02:17.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20250909092316_migrate.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909092316_migrate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250909092316_migrate.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909092316_migrate.cs",
+              "RelativeToolTip": "Migrations\\20250909092316_migrate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:23:16.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250909093653_UpdatingorderTracker.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909093653_UpdatingorderTracker.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250909093653_UpdatingorderTracker.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\ProductApi\\Migrations\\20250909093653_UpdatingorderTracker.cs",
+              "RelativeToolTip": "Migrations\\20250909093653_UpdatingorderTracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:36:53.133Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
