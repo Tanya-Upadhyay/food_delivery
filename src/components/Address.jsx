@@ -109,7 +109,6 @@ function Address() {
         toast.error("Failed to set address as primary");
     }
 };
-
     return (
 
         <div className="p-5 ml-[13rem] md:ml-[30rem] mt-[6rem]">
@@ -170,6 +169,7 @@ function Address() {
                             <input
                                 name='pincode'
                                 type='number'
+                                min="0"
                                 onChange={handleAddressChange}
                                 value={addressFormData.pincode}
                                 placeholder='Pincode'
@@ -177,6 +177,7 @@ function Address() {
                             <input
                                 name='phoneNumber'
                                 type='number'
+                                min="0"
                                 onChange={handleAddressChange}
                                 value={addressFormData.phoneNumber}
                                 placeholder='PhoneNo'

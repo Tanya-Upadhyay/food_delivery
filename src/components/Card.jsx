@@ -14,8 +14,8 @@ function Card({ name, image, id, price, type, stocks, isBestSeller }) {
   const { fetchCart } = useContext(dataContext);
   const token = localStorage.getItem("authToken");
   const decode = token ? jwtDecode(token) : null;
-
   const handleAddToCart = async () => {
+   
     try {
       const cartItems = {
         UID: decode.uid,
@@ -34,7 +34,7 @@ function Card({ name, image, id, price, type, stocks, isBestSeller }) {
       fetchCart();
     } catch (error) {
       console.error("Error adding to cart", error);
-      toast.error("Failed to add item");
+      toast.error("Login to add your dish");
     }
   };
   return (

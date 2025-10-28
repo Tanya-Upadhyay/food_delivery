@@ -22,8 +22,6 @@ function Home() {
     setInput(category === "All" ? "" : category);
     setPage(1);
   }
-
-
   return (
     <>
       <div className="w-full min-h-screen overflow-hidden">

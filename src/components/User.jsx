@@ -103,22 +103,18 @@ function User() {
               <div className="flex justify-center space-x-4">
                 <button
                   onClick={handleLogout}
-                  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400"
-                >
+                  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400">
                   Yes
                 </button>
                 <button
                   onClick={() => setConfirmModal(false)}
-                  className="bg-gray-300 px-4 py-2 rounded hover:bg-gray-200"
-                >
+                  className="bg-gray-300 px-4 py-2 rounded hover:bg-gray-200">
                   Cancel
                 </button>
               </div>
             </div>
           </div>
         )}
-
-
         <ToastContainer position="top-center" />
       </>
       <Cart />

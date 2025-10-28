@@ -162,6 +162,7 @@ function AddProducts() {
                     <input
                         name="price"
                         type="number"
+                        min = "0"
                         value={formData.price}
                         onChange={handleChange}
                         placeholder="Product Price"
@@ -170,6 +171,7 @@ function AddProducts() {
                     <input
                         name="stocks"
                         type="number"
+                        min = "0"
                         value={formData.stocks}
                         onChange={handleChange}
                         placeholder="Stock"

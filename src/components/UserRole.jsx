@@ -14,24 +14,7 @@ function UserRole() {
   const [page, setPage] = useState(1);
   const [pageSize,] = useState(5);
 
-  // const loadProducts = async () => {
-  //         try {
-  //             const response = await fetchProducts({
-  //                 page,
-  //                 pageSize,
-  //                 token
-  //             });
-
-  //             setCate(response.items);
-  //             setAllProducts(response.items);
-  //             setTotalItems(response.totalItems);
-  //         } catch (err) {
-  //             console.error("Failed to fetch products", err);
-  //         }
-  //     };
-  //     useEffect(() => {
-  //         loadProducts();
-  //     }, [page, pageSize]);
+ 
   const loadUsers = async () => {
     try {
       const response = await fetchAllUser({

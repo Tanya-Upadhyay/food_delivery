@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 function ForgotPassword() {
   const [step, setStep] = useState(1);
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const API_BASE = import.meta.env.VITE_BASE_URL;
+  const navigate = useNavigate()
   const handleSendOtp = async (e) => {
     e.preventDefault();
     try {
@@ -35,7 +36,7 @@ function ForgotPassword() {
     try {
       await axios.post(`${API_BASE}/api/reset-password`, { email, newPassword });
       toast.success("Password reset successful!");
-      setTimeout(() => (window.location.href = "/login"), 1500);
+      setTimeout(() => (navigate("/login")), 1500);
     } catch {
       toast.error("Error resetting password.");
     }
@@ -67,6 +68,7 @@ function ForgotPassword() {
           <button type="submit" className="bg-red-400 text-white p-2 rounded w-[30%]">Reset Password</button>
         </form>
       )}
+
     </div>
   );
 }

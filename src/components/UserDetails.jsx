@@ -66,7 +66,9 @@ function UserDetails() {
                 placeholder='Email'
                 className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
               <input
-                name='phoneNumber' i
+                name='phoneNumber' 
+                type='number'
+                min="0"
                 onChange={handleUserDetailsChange}
                 value={userFormData.phoneNumber}
                 placeholder='PhoneNo'
