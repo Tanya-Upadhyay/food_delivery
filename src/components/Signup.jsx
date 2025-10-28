@@ -73,6 +73,7 @@ function Signup() {
             <input
               type="number"
               min="0"
+              maxLength={10}
               placeholder='phoneNumber'
               onChange={e => setPhoneNumber(e.target.value)}
               className='flex bg-transparent p-[14px] w-[25rem] gap-[1rem] rounded-md m-[1rem] shadow-lg hover:scale-102 transtition-all duration-500 bg-white/10' />

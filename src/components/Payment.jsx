@@ -9,7 +9,7 @@ import { jwtDecode } from "jwt-decode";
 import axios from "axios";
 
 function Payment() {
-  const { backendCart, fetchOrders, paymentMethod, setPaymentMethod } = useContext(dataContext);
+  const { backendCart, fetchOrders, paymentMethod, setPaymentMethod, fetchCart, setBackendCart } = useContext(dataContext);
   const API_BASE = import.meta.env.VITE_BASE_URL;
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [primaryAddress, setPrimaryAddress] = useState(null);
@@ -52,27 +52,36 @@ function Payment() {
     setPaymentMethod(value);
   };
 
-  const handleOnlinePayment = async (method) => {
-    
-    if (!primaryAddress) {
-      toast.error("Please set a delivery address before making payment.");
-      return;
-    }
-    try {
-      const orderItems = {
-        UID: decoded?.uid,
-        address: primaryAddress,
-        paymentMethod: method,
-        total,
-        items: backendCart,
-      };
-      await PostOnlineOrder(total, orderItems);
-      toast.success("Payment successful! Placing your order...");
-      fetchOrders();
-    } catch (error) {
-      toast.error("Payment failed. Please try again.");
-    }
+ const handleOnlinePayment = async (method) => {
+  if (!primaryAddress) {
+    toast.error("Please set a delivery address before making payment.");
+    return;
+  }
+
+  const orderItems = {
+    UID: decoded?.uid,
+    address: primaryAddress,
+    paymentMethod: method,
+    total,
+    items: backendCart,
   };
+
+  await PostOnlineOrder(
+    total,
+    orderItems,
+    () => {
+      
+      toast.success("Payment successful! Order placed ");
+      fetchOrders();
+      fetchCart();
+    },
+    (error) => {
+      toast.error("Payment failed. Please try again.");
+      console.error(error);
+    }
+  );
+};
+
 
   const handlePlaceOrder = () => {
     
@@ -98,9 +107,14 @@ function Payment() {
       address: primaryAddress,
     };
     try {
+
       await postOrder(orderItems);
       toast.success("Order Placed");
       fetchOrders();
+      console.log("cod")
+      fetchCart();
+      
+
       setShowConfirmModal(false);
     } catch (error) {
       toast.error("Failed to place order.");

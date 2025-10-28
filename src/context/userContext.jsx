@@ -57,7 +57,9 @@ useEffect(() => {
   const fetchCart = async () => {
     try {
       const cartItems = await getCartItems();
+
       setBackendCart(cartItems);
+      
     } catch (error) {
       console.error("Failed to fetch cart items", error);
     }
@@ -67,17 +69,18 @@ useEffect(() => {
     loadProducts();
   }, [input, page, pageSize]);
 
-  useEffect(() => {
-    if (showCart) {
-      fetchCart();
-    }
-  }, [showCart]);
+ useEffect(() => {
+  const token = localStorage.getItem('authToken');
+  if (token) {
+    fetchCart();
+  }
+}, [localStorage.getItem('authToken')]);
 
   const fetchOrders = async () => {
     try {
       const orderItems = await getOrderItems()
       setBackendOrders(orderItems);
-      setBackendCart([])
+      fetchCart()
     } catch (error) {
       console.log("Failed to fetch order items", error)
     }
@@ -87,8 +90,11 @@ useEffect(() => {
   const token = localStorage.getItem('authToken');
   if (token) {
     fetchOrders();
+    fetchCart()
   } 
 }, [localStorage.getItem('authToken')]); 
+
+
 
   const data = {
     input,

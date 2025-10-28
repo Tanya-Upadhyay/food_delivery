@@ -184,12 +184,12 @@ const ChatDashboard = () => {
 
                         <div className='h-[50rem] w-[80rem] p-[1rem] ml-[3rem] mr-[3rem]  rounded-md overflow-y-scroll space-x-4 shadow-md bg-white/10 p-[1rem]'>
                             {messages.map((msg, idx) => (
-                                <div key={idx} className={`${msg.senderId === adminId ? 'text-right' : 'text-left'} `}>
+                                <div key={idx} >
                                     <div className={`${msg.senderId === adminId ? "bg-red-200 ml-[87%] shadow-lg" : "bg-gray-100 ml-[2%] shadow-lg"} m-[1rem] p-[1rem] rounded-md max-w-[200px]`}>
-                                        <div className='text-black' >
+                                        <div className='text-black ' >
                                             <b>{msg.senderId === adminId ? 'Admin' : `${selectedUser?.name}`}</b>
                                         </div>
-                                        <div className='text-black'>{msg.message}</div>
+                                        <div className='text-black break-words'>{msg.message}</div>
                                         <div className='text-[.7rem] text-gray-400'>
                                             {new Date(msg.sentAt).toLocaleTimeString()}
                                         </div>
