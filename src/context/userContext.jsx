@@ -81,6 +81,7 @@ useEffect(() => {
       const orderItems = await getOrderItems()
       setBackendOrders(orderItems);
       fetchCart()
+      loadProducts()
     } catch (error) {
       console.log("Failed to fetch order items", error)
     }

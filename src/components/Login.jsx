@@ -33,7 +33,7 @@ function Login() {
       <Nav2 />
       <div className='flex justify-center items-center p-[2rem]'>
         <div><img src="Login-bro.png" className='h-[100%] w-[70%] mt-[5rem] ' /></div>
-      <div className='h-[80%] w-[50%] flex flex-col gap-[2rem] justify-center items-center mr-[10rem] bg-white/10 rounded-lg mt-[4rem]'>
+      <div className='h-[80%] w-[50%] flex flex-col gap-[2rem] justify-center items-center mr-[10rem] bg-white/10 rounded-lg mt-[4rem] shadow-md'>
 
         <form onSubmit={handleLogin} className='flex flex-col gap-[1rem] justify-center items-center p-[5rem]' >
           <h1 className='text-3xl font-bold '>Login</h1>
@@ -59,9 +59,7 @@ function Login() {
         </div>
       </div>
       </div>
-      
     </div>
-
   )
 }
 

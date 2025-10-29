@@ -151,7 +151,7 @@ function AddProducts() {
                         <option value="burger"
                             className='bg-base-100 dark:bg-base-200 '>burger</option>
                     </select>
-                    <select name="type" onChange={handleChange} value={formData.type} className='bg-white/10 p-[14px] w-[25rem] rounded-md  shadow-lg '>
+                    <select name="type" onChange={handleChange} value={formData.type} className='bg-white/10 p-[14px] w-[25rem] rounded-md shadow-lg '>
                         <option value="Choose Product Type"
                             className='bg-base-100 dark:bg-base-200 '>Choose Product Type</option>
                         <option value="veg"

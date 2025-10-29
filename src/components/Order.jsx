@@ -15,6 +15,7 @@ function Order({ order, isExpanded, onToggle }) {
     orderdate,
     status,
     orderItems,
+    paymentStatus
   } = order;
 
   const invoiceRef = useRef();
@@ -35,18 +36,19 @@ function Order({ order, isExpanded, onToggle }) {
     doc.text(`Name: ${userName}`, 20, y); y += 10;
     doc.text(`Phone: ${phoneNumber}`, 20, y); y += 10;
     doc.text(`Order Date: ${orderdate}`, 20, y); y += 10;
+    doc.text(`Payment Status: ${paymentStatus}`, 20, y); y += 10;
     doc.text(`Address:`, 20, y); y += 8;
 
     const addressLines = doc.splitTextToSize(address, 160);
     doc.text(addressLines, 30, y);
     y += addressLines.length * 7 + 4;
 
-    const tableColumn = ["#", "Product Name", "Price (Rs)", "Quantity", "SubTotal (Rs)"];
+    const tableColumn = ["#", "Product Name", "Quantity", "Price (Rs)", "SubTotal (Rs)"];
     const tableRows = orderItems.map((item, index) => [
       index + 1,
       item.productName,
-      item.price,
       item.quantity,
+      item.price,
       item.price * item.quantity
     ]);
 
@@ -84,6 +86,7 @@ function Order({ order, isExpanded, onToggle }) {
             <div><strong>Phone No: </strong>{phoneNumber}</div>
             <div><strong>Address: </strong>{address}</div>
             <div><strong>Order Date: </strong>{orderdate}</div>
+            <div><strong>Payment Status: </strong>{paymentStatus}</div>
           </div>
         )}
         <div><strong>Status: </strong>{status[status.length - 1]}</div>
@@ -106,7 +109,7 @@ function Order({ order, isExpanded, onToggle }) {
                       className={`w-4 h-4 rounded-full ${isCompleted ? 'bg-green-500' : 'bg-gray-400'}`}
                     ></div> */}
                     <span
-                      className={`text-sm md:text-base ${isCurrent ? 'font-bold text-yellow-400' : 'text-white'} ${isCompleted ? 'font-bold text-yellow-400' : 'text-white'}`}
+                      className={`text-sm md:text-base ${isCurrent ? 'font-bold text-yellow-400' : ''} ${isCompleted ? 'font-bold text-yellow-400' : ''}`}
                     >
                       {stage}
                     </span>

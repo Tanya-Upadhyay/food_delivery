@@ -7,19 +7,38 @@ import Footer from "./Footer";
 import { PostOnlineOrder, postOrder } from "../services/postOrderService";
 import { jwtDecode } from "jwt-decode";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Payment() {
-  const { backendCart, fetchOrders, paymentMethod, setPaymentMethod, fetchCart, setBackendCart } = useContext(dataContext);
+  const {
+    backendCart,
+    fetchOrders,
+    paymentMethod,
+    setPaymentMethod,
+    fetchCart,
+  } = useContext(dataContext);
   const API_BASE = import.meta.env.VITE_BASE_URL;
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [primaryAddress, setPrimaryAddress] = useState(null);
   const token = localStorage.getItem("authToken");
   const decoded = token ? jwtDecode(token) : null;
+  const navigate = useNavigate();
 
-  const subtotal = backendCart.reduce((total, item) => total + item.quantity * item.price, 0);
+  const subtotal = backendCart.reduce(
+    (total, item) => total + item.quantity * item.price,
+    0
+  );
   const deliverFee = 20;
   const taxes = subtotal * 0.005;
   const total = Math.floor(subtotal + deliverFee + taxes);
+
+ 
+  useEffect(() => {
+    if (backendCart.length === 0) {
+      toast.info("Your cart is empty. Redirecting to menu...");
+      setTimeout(() => navigate("/menu"), 1500);
+    }
+  }, [backendCart, navigate]);
 
   useEffect(() => {
     const fetchPrimaryAddress = async () => {
@@ -52,39 +71,37 @@ function Payment() {
     setPaymentMethod(value);
   };
 
- const handleOnlinePayment = async (method) => {
-  if (!primaryAddress) {
-    toast.error("Please set a delivery address before making payment.");
-    return;
-  }
+  const handleOnlinePayment = async (method) => {
+    if (!primaryAddress) {
+      toast.error("Please set a delivery address before making payment.");
+      return;
+    }
 
-  const orderItems = {
-    UID: decoded?.uid,
-    address: primaryAddress,
-    paymentMethod: method,
-    total,
-    items: backendCart,
+    const orderItems = {
+      UID: decoded?.uid,
+      address: primaryAddress,
+      paymentMethod: paymentMethod,
+      total,
+      items: backendCart,
+    };
+
+    await PostOnlineOrder(
+      total,
+      orderItems,
+      () => {
+        toast.success("Payment successful! Order placed.");
+        fetchOrders();
+        fetchCart();
+        setTimeout(() => navigate("/menu"), 2000);
+      },
+      (error) => {
+        toast.error("Payment failed. Please try again.");
+        console.error(error);
+      }
+    );
   };
 
-  await PostOnlineOrder(
-    total,
-    orderItems,
-    () => {
-      
-      toast.success("Payment successful! Order placed ");
-      fetchOrders();
-      fetchCart();
-    },
-    (error) => {
-      toast.error("Payment failed. Please try again.");
-      console.error(error);
-    }
-  );
-};
-
-
   const handlePlaceOrder = () => {
-    
     if (!primaryAddress) {
       toast.error("Please set a delivery address before placing order.");
       return;
@@ -101,21 +118,18 @@ function Payment() {
     }
     const orderItems = {
       UID: decoded?.uid,
-      paymentMethod: "cod",
+      paymentMethod: paymentMethod,
       total,
       items: backendCart,
       address: primaryAddress,
     };
     try {
-
       await postOrder(orderItems);
-      toast.success("Order Placed");
+      toast.success("Order Placed Successfully!");
       fetchOrders();
-      console.log("cod")
       fetchCart();
-      
-
       setShowConfirmModal(false);
+      setTimeout(() => navigate("/menu"), 2000);
     } catch (error) {
       toast.error("Failed to place order.");
       setShowConfirmModal(false);
@@ -127,11 +141,18 @@ function Payment() {
       <Nav2 />
       <div className="mt-[8rem] flex flex-col items-center justify-center">
         <div>
-          <p className="text-3xl md:text-5xl font-bold mb-[1rem]">Choose a payment method</p>
-          <p className="md:text-xl mb-[3rem]">All transactions are secured and encrypted</p>
+          <p className="text-3xl md:text-5xl font-bold mb-[1rem]">
+            Choose a payment method
+          </p>
+          <p className="md:text-xl mb-[3rem]">
+            All transactions are secured and encrypted
+          </p>
         </div>
         {["credit", "UPI", "cod"].map((val) => (
-          <div key={val} className="flex justify-between items-center bg-white/10 p-[1rem] w-[80%] md:w-[45%] rounded-md m-[0.5rem] shadow-lg mb-[1rem]">
+          <div
+            key={val}
+            className="flex justify-between items-center bg-white/10 p-[1rem] w-[80%] md:w-[45%] rounded-md m-[0.5rem] shadow-lg mb-[1rem]"
+          >
             <label className="ml-[.5rem] text-xl">
               <input
                 type="radio"
@@ -145,7 +166,13 @@ function Payment() {
               {val === "cod" && "Cash on Delivery"}
             </label>
             <img
-              src={val === "credit" ? "images.png" : val === "UPI" ? "Pay.png" : "cod.jpg"}
+              src={
+                val === "credit"
+                  ? "images.png"
+                  : val === "UPI"
+                  ? "Pay.png"
+                  : "cod.jpg"
+              }
               alt=""
               className="h-[3rem]"
             />
@@ -153,7 +180,6 @@ function Payment() {
         ))}
         {paymentMethod && (
           <button
-            
             className={`${
               !primaryAddress ? "hidden" : "bg-red-400 hover:scale-105"
             } p-[1rem] w-[15rem] m-[1rem] mt-[2rem] rounded-md font-bold shadow-md text-white transition-all duration-500`}
@@ -169,21 +195,21 @@ function Payment() {
         {showConfirmModal && (
           <div className="fixed inset-0 bg-opacity-50 flex justify-center items-center shadow-lg">
             <div className="bg-white p-[5rem] rounded shadow-lg text-center">
-              <h2 className="text-xl font-bold mb-4 text-gray-500">Confirm Your Order</h2>
+              <h2 className="text-xl font-bold mb-4 text-gray-500">
+                Confirm Your Order
+              </h2>
               <p className="mb-6 text-gray-500">
                 Are you sure you want to place this order with Cash on Delivery?
               </p>
               <div className="flex justify-center space-x-4">
                 <button
                   onClick={confirmOrder}
-                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-400"
-                >
+                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-400">
                   Yes, Place Order
                 </button>
                 <button
                   onClick={() => setShowConfirmModal(false)}
-                  className="bg-gray-300 px-4 py-2 rounded hover:bg-gray-200"
-                >
+                  className="bg-gray-300 px-4 py-2 rounded hover:bg-gray-200">
                   Cancel
                 </button>
               </div>
