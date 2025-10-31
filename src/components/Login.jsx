@@ -18,13 +18,13 @@ function Login() {
       
       localStorage.setItem("authToken", authToken);
       localStorage.setItem("isLoggedIn", true);
-      toast.success("Login successful!");
+      toast.success("Login successful!", {id:"unique-toast"});
       navigate("/menu");
     } catch (error) {
       if (error.response && error.response.status === 401) {
-        toast.error("Invalid email or password");
+        toast.error("Invalid email or password", {id:"unique-toast"});
       } else {
-        toast.error("Login failed. Please try again.");
+        toast.error("Login failed. Please try again.", {id:"unique-toast"});
       }
     }
   }

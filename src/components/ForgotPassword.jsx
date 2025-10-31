@@ -24,7 +24,7 @@ function ForgotPassword() {
       setStep(2);
     } catch {
       setIsSendingOtp(false);
-      toast.error("Error sending OTP.");
+      toast.error("Error sending OTP.",{id:"unique-toast"});
     }
   };
 
@@ -33,11 +33,11 @@ function ForgotPassword() {
     setIsVerifyingOtp(true);
     try {
       await axios.post(`${API_BASE}/api/verify-reset-otp`, { email, otp });
-      toast.success("OTP verified.");
+      toast.success("OTP verified.", {id:"unique-toast"});
       setStep(3);
     } catch {
       setIsVerifyingOtp(false);
-      toast.error("Invalid or expired OTP.");
+      toast.error("Invalid or expired OTP.", {id:"unique-toast"});
     }
   };
 

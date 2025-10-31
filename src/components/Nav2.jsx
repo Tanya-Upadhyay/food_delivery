@@ -65,21 +65,23 @@ function Nav2() {
       newConnection.stop();
     };
   }, []);
-  
+
   const handleMarkAsRead = async () => {
-  try {
-    await axios.post(`${API_BASE}/api/chat/mark-as-read`, null, {
-      params: {
-        senderId: adminId,
-        receiverId: `${decode?.uid}`
-      },
-      headers: { Authorization: `Bearer ${token}` }
-    });
-    setUnreadCount(0);
-  } catch (error) {
-    console.error("Failed to mark messages as read", error);
-  }
-};
+    try {
+      await axios.post(`${API_BASE}/api/chat/mark-as-read`, null, {
+        params: {
+          senderId: adminId,
+          receiverId: `${decode?.uid}`
+        },
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setUnreadCount(0);
+    } catch (error) {
+      console.error("Failed to mark messages as read", error);
+    }
+  };
+  const totalCartItems = backendCart.reduce((sum, item) => sum + item.quantity, 0);
+
 
 
   return (
@@ -113,14 +115,14 @@ function Nav2() {
           </ul>
         </div>
 
-        <div className={`flex gap-[1rem] ${decode?.roles ==="user" ? "md:ml-[20%]" : "md:ml-[23%]" }  ml-[3%] `}>
+        <div className={`flex gap-[1rem] ${decode?.roles === "user" ? "md:ml-[20%]" : "md:ml-[23%]"}  ml-[3%] `}>
           <div >
             <ThemeController />
           </div>
           <div
             className="w-[60px] h-[60px] flex justify-center items-center rounded-md  shadow-lg relative hover:scale-110  cursor-pointer transition-all duration-500 bg-white/10 "
             onClick={() => { setShowCart(true) }}>
-            <span className="absolute top-0 right-2 font-bold ">{backendCart.length}</span>
+            <span className="absolute top-0 right-2 font-bold ">{totalCartItems}</span>
             <IoBag className="color-red-400 w-[35px] h-[35px] rounded-md text-red-500 " />
           </div>
           {isLoggedIn ?

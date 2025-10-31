@@ -40,11 +40,11 @@ function Card({ name, image, id, price, type, stocks, isBestSeller }) {
     }
     await axios.post(`${API_BASE}/api/cart`, cartItems);
     dispatch(AddItem({ id, name, price, qty: 1, image }));
-    toast.success("Item added to cart");
+    toast.success("Item added to cart",{id:"unique-toast"});
     fetchCart();
   } catch (error) {
     console.error("Error adding to cart:", error);
-    toast.error("Something went wrong. Please try again.");
+    toast.error("Something went wrong. Please try again.", {id:"unique-toast"});
   }
 };
 

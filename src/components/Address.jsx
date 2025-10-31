@@ -62,17 +62,17 @@ function Address() {
         const { addressType, userName, houseNo, colony, area, city, state, pincode, phoneNumber, landmark } = addressFormData;
 
         if (!addressType || !userName || !houseNo || !colony || !area || !city || !state || !pincode || !phoneNumber || !landmark) {
-            toast.error("All fields are required");
+            toast.error("All fields are required",{id:"unique-toast"});
             return false;
         }
 
         if (phoneNumber.length !== 10) {
-            toast.error("Please enter a valid Phone Number");
+            toast.error("Please enter a valid Phone Number",{id:"unique-toast"});
             return false;
         }
 
         if (pincode.length !== 6) {
-            toast.error("Please enter a valid pincode");
+            toast.error("Please enter a valid pincode",{id:"unique-toast"});
             return false;
         }
 
@@ -83,12 +83,21 @@ function Address() {
         if (!validateForm()) return;
 
         try {
-            const res = await axios.post(`${API_BASE}/api/Addresses/`, addressFormData, {
+            const method = addressFormData.aid ? 'put' : 'post';
+            const url = addressFormData.aid
+                ? `${API_BASE}/api/Addresses/edit/${addressFormData.aid}`
+                : `${API_BASE}/api/Addresses/`;
+
+            const res = await axios({
+                method,
+                url,
+                data: addressFormData,
                 headers: {
-                    Authorization: `Bearer ${token}`
-                }
+                    Authorization: `Bearer ${token}`,
+                },
             });
-            toast.success("Address saved successfully");
+
+            toast.success(addressFormData.aid ? "Address updated successfully" : "Address added successfully", {id:"unique-toast"});
             setAddressFormData({
                 uid: decode?.uid,
                 addressType: "",
@@ -103,13 +112,15 @@ function Address() {
                 landmark: "",
                 isPrimary: false,
             });
+
             setShowAddressForm(false);
             fetchAddresses();
         } catch (error) {
             console.error('Failed to save address:', error);
-            toast.error(error.response?.data?.message || 'Failed to save address');
+            toast.error(error.response?.data?.message || 'Failed to save address', {id:"unique-toast"});
         }
     };
+
 
     const deleteAddress = async (aidToDelete) => {
         try {
@@ -132,13 +143,15 @@ function Address() {
                     Authorization: `Bearer ${token}`,
                 },
             });
-            toast.success("Your address is set as primary");
+            toast.success("Your address is set as primary",{id:"unique-toast"});
             fetchAddresses();
         } catch (error) {
             console.error('Failed to set address as primary:', error);
             toast.error("Failed to set address as primary");
         }
     };
+
+   
 
     return (
         <div className="p-5 ml-[13rem] md:ml-[30rem] mt-[6rem]">
@@ -203,7 +216,7 @@ function Address() {
                                 value={addressFormData.pincode}
                                 placeholder="Pincode"
                                 className="bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg"
-                                inputMode="numeric"/>
+                                inputMode="numeric" />
 
                             <input
                                 name="phoneNumber"
@@ -213,7 +226,7 @@ function Address() {
                                 value={addressFormData.phoneNumber}
                                 placeholder="PhoneNo"
                                 className="bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg"
-                                inputMode="numeric"/>
+                                inputMode="numeric" />
 
                             <input
                                 name='landmark'
@@ -258,11 +271,22 @@ function Address() {
                                         checked={a.isPrimary} onChange={() => handlePrimaryCheckboxChange(a.aid)} />
                                     <label>{a.isPrimary ? "Primary Address" : "Set as Primary"}</label>
                                 </div>
+                                <div className='flex gap-[1rem] flex-col'>
+                                <button
+                                    onClick={() => {
+                                        setAddressFormData(a);
+                                        setShowAddressForm(true);
+                                    }}
+                                    className="bg-red-400 p-[.7rem] w-[40%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer">
+                                    Edit
+                                </button>
+
                                 {!a.isPrimary && (
-                                    <div className="flex gap-4 items-center mt-2">
+                                    <div className="flex gap-4 items-center ml-[2rem]">
                                         <IoTrash className="h-[2rem] w-[2rem] cursor-pointer text-red-500" onClick={() => deleteAddress(a.aid)} />
                                     </div>
                                 )}
+                                </div>
                             </div>
                         </div>
                     </li>

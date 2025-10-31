@@ -34,7 +34,7 @@ function Payment() {
 
   useEffect(() => {
     if (backendCart.length === 0) {
-      toast.info("Your cart is empty. Redirecting to menu...");
+      toast.info("Your cart is empty. Redirecting to menu...", {id:"unique-toast"});
       setTimeout(() => navigate("/menu"), 1500);
     }
   }, [backendCart, navigate]);
@@ -49,13 +49,13 @@ function Payment() {
         const addresses = Array.isArray(res.data) ? res.data : [res.data];
         const primary = addresses.find((addr) => addr.isPrimary === true);
         if (!primary) {
-          toast.error("Please set a delivery address before proceeding.");
+          toast.error("Please set a delivery address before proceeding.", {id:"unique-toast"});
           setPrimaryAddress(null);
         } else {
           setPrimaryAddress(primary);
         }
       } catch (error) {
-        toast.error("Unable to load address. Please check your connection.");
+        toast.error("Unable to load address. Please check your connection.", {id:"unique-toast"});
       }
     };
     fetchPrimaryAddress();
@@ -64,7 +64,7 @@ function Payment() {
 
   const handlePayment = (e) => {
     if (!primaryAddress) {
-      toast.error("Please set a delivery address before making payment.");
+      toast.error("Please set a delivery address before making payment.", {id:"unique-toast"});
       return;
     }
     const value = e.target.value;
@@ -73,7 +73,7 @@ function Payment() {
 
   const handleOnlinePayment = async (method) => {
     if (!primaryAddress) {
-      toast.error("Please set a delivery address before making payment.");
+      toast.error("Please set a delivery address before making payment.", {id:"unique-toast"});
       return;
     }
 
@@ -89,13 +89,13 @@ function Payment() {
       total,
       orderItems,
       () => {
-        toast.success("Payment successful! Order placed.");
+        toast.success("Payment successful! Order placed.", {id:"unique-toast"});
         fetchOrders();
         fetchCart();
         setTimeout(() => navigate("/menu"), 2000);
       },
       (error) => {
-        toast.error("Payment failed. Please try again.");
+        toast.error("Payment failed. Please try again.", {id:"unique-toast"});
         console.error(error);
       }
     );
@@ -103,7 +103,7 @@ function Payment() {
 
   const handlePlaceOrder = () => {
     if (!primaryAddress) {
-      toast.error("Please set a delivery address before placing order.");
+      toast.error("Please set a delivery address before placing order.", {id:"unique-toast"});
       return;
     }
     if (paymentMethod === "cod") {
@@ -113,7 +113,7 @@ function Payment() {
 
   const confirmOrder = async () => {
     if (!primaryAddress) {
-      toast.error("Please set a delivery address before confirming.");
+      toast.error("Please set a delivery address before confirming.", {id:"unique-toast"});
       return;
     }
     const orderItems = {
@@ -125,7 +125,7 @@ function Payment() {
     };
     try {
       await postOrder(orderItems);
-      toast.success("Order Placed Successfully!");
+      toast.success("Order Placed Successfully!", {id:"unique-toast"});
       fetchOrders();
       fetchCart();
       setShowConfirmModal(false);

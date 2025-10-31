@@ -15,7 +15,7 @@ function Card2({ cid, name, price, image, qty, stocks }) {
   const updateQty = async (newQty) => {
     const token = localStorage.getItem("authToken");
     if (newQty >= stocks) {
-      toast.error(`Limited Stock`);
+      toast.error(`Limited Stock`,{id:"unique-toast"});
       return;
     }
 

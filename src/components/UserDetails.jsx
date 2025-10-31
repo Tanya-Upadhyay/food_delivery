@@ -37,7 +37,7 @@ function UserDetails() {
 
   const handleUserDetailsSave = async () => {
     if (userFormData.phoneNumber.length !== 10) {
-      toast.error("Please enter a valid phone number");
+      toast.error("Please enter a valid phone number" , {id:"unique-toast"});
       return;
     }
 

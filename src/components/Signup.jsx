@@ -22,7 +22,7 @@ function Signup() {
     e.preventDefault();
 
     if (phoneNumber.length !== 10) {
-      toast.error("Please enter a valid phone number")
+      toast.error("Please enter a valid phone number", {id:"unique-toast"})
       return
     }
 
@@ -30,14 +30,14 @@ function Signup() {
 
     try {
       await signupUser({ name, email, phoneNumber, password });
-      toast.success("Registration successful! OTP sent to your email.");
+      toast.success("Registration successful! OTP sent to your email.", {id:"unique-toast"});
       setStep(2);
     } catch (error) {
       setIsOtpSent(false);
       if (error.response && error.response.data && error.response.data.message) {
         toast.error(error.response.data.message);
       } else {
-        toast.error("Something went wrong");
+        toast.error("Something went wrong", {id:"unique-toast"});
       }
     }
   }
@@ -52,7 +52,7 @@ function Signup() {
       const { authToken } = response.data;
       localStorage.setItem("authToken", authToken);
       localStorage.setItem("isLoggedIn", true);
-      toast.success("Email verified successfully.")
+      toast.success("Email verified successfully.",{id:"unique-toast"})
       navigate("/menu")
     } catch (error) {
       toast.error(error?.response?.data?.message || "OTP verification failed.")

@@ -74,7 +74,7 @@ function AddProducts() {
                         Authorization: `Bearer ${token}`,
                     }
                 });
-                toast.success("Product Updated Successfully");
+                toast.success("Product Updated Successfully", {id:"unique-toast"});
             } else {
                 res = await axios.post(`${API_BASE}/api/products`, productData, {
                     headers: {
@@ -82,7 +82,7 @@ function AddProducts() {
                         Authorization: `Bearer ${token}`,
                     },
                 });
-                toast.success("Product Added Successfully");
+                toast.success("Product Added Successfully",{id:"unique-toast"});
             }
             await loadProducts()
             setFormData({ productName: "", category: "", price: "", type: "", image: "", stocks: 0, productStatus: "" });
