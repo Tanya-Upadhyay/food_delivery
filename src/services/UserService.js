@@ -29,13 +29,3 @@ export const fetchAllUser = async ({ page = 1, pageSize = 6, token}) => {
   });
   return res.data;
 };
-// export const updateUser = async (userFormData,) => {
-//   const token = localStorage.getItem("authToken");
-//   const decode = token ? jwtDecode(token) : null;
-//   const res = await axios.put(`${API_BASE}/api/Users/${decode.uid}`,userFormData,{
-//   headers: {
-//     Authorization : `Bearer ${token}`,
-//   }
-// })
-// return res.data;
-// };

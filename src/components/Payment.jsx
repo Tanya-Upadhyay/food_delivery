@@ -32,7 +32,6 @@ function Payment() {
   const taxes = subtotal * 0.005;
   const total = Math.floor(subtotal + deliverFee + taxes);
 
- 
   useEffect(() => {
     if (backendCart.length === 0) {
       toast.info("Your cart is empty. Redirecting to menu...");
@@ -60,6 +59,7 @@ function Payment() {
       }
     };
     fetchPrimaryAddress();
+    setPaymentMethod(null);
   }, []);
 
   const handlePayment = (e) => {
@@ -179,18 +179,27 @@ function Payment() {
           </div>
         ))}
         {paymentMethod && (
-          <button
-            className={`${
-              !primaryAddress ? "hidden" : "bg-red-400 hover:scale-105"
-            } p-[1rem] w-[15rem] m-[1rem] mt-[2rem] rounded-md font-bold shadow-md text-white transition-all duration-500`}
-            onClick={
-              paymentMethod === "cod"
-                ? handlePlaceOrder
-                : () => handleOnlinePayment(paymentMethod)
-            }
-          >
-            {paymentMethod === "cod" ? "Place Order" : "Pay Now"}
-          </button>
+          <>
+            {paymentMethod === "cod" ? (
+              <button
+                className={`${
+                  !primaryAddress ? "hidden" : "bg-red-400 hover:scale-105"
+                } p-[1rem] w-[15rem] m-[1rem] mt-[2rem] rounded-md font-bold shadow-md text-white transition-all duration-500`}
+                onClick={handlePlaceOrder}
+              >
+                Place Order
+              </button>
+            ) : (
+              <button
+                className={`${
+                  !primaryAddress ? "hidden" : "bg-red-400 hover:scale-105"
+                } p-[1rem] w-[15rem] m-[1rem] mt-[2rem] rounded-md font-bold shadow-md text-white transition-all duration-500`}
+                onClick={() => handleOnlinePayment(paymentMethod)}
+              >
+                Pay Now
+              </button>
+            )}
+          </>
         )}
         {showConfirmModal && (
           <div className="fixed inset-0 bg-opacity-50 flex justify-center items-center shadow-lg">
@@ -204,12 +213,14 @@ function Payment() {
               <div className="flex justify-center space-x-4">
                 <button
                   onClick={confirmOrder}
-                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-400">
+                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-400"
+                >
                   Yes, Place Order
                 </button>
                 <button
                   onClick={() => setShowConfirmModal(false)}
-                  className="bg-gray-300 px-4 py-2 rounded hover:bg-gray-200">
+                  className="bg-gray-300 px-4 py-2 rounded hover:bg-gray-200"
+                >
                   Cancel
                 </button>
               </div>

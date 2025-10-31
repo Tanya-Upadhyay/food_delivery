@@ -41,7 +41,7 @@ function Signup() {
       }
     }
   }
-
+  
   const handleOtpVerify = async (e) => {
     e.preventDefault()
     try {
@@ -53,7 +53,7 @@ function Signup() {
       localStorage.setItem("authToken", authToken);
       localStorage.setItem("isLoggedIn", true);
       toast.success("Email verified successfully.")
-      navigate("/about")
+      navigate("/menu")
     } catch (error) {
       toast.error(error?.response?.data?.message || "OTP verification failed.")
     }
@@ -72,6 +72,7 @@ function Signup() {
             <input
               type="text"
               placeholder='name'
+              maxLength={50}
               onChange={e => setName(e.target.value)}
               className='flex bg-transparent p-[14px] w-[25rem] gap-[1rem] rounded-md m-[1rem] shadow-lg hover:scale-102 transtition-all duration-500 bg-white/10' />
             <input

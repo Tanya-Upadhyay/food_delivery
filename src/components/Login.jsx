@@ -19,7 +19,7 @@ function Login() {
       localStorage.setItem("authToken", authToken);
       localStorage.setItem("isLoggedIn", true);
       toast.success("Login successful!");
-      navigate("/about");
+      navigate("/menu");
     } catch (error) {
       if (error.response && error.response.status === 401) {
         toast.error("Invalid email or password");

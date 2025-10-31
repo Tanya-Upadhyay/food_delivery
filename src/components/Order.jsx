@@ -124,7 +124,7 @@ function Order({ order, isExpanded, onToggle }) {
           <ul className="flex flex-col">
             {orderItems.map((item, index) => (
               <li key={index}>
-                <div className="flex justify-between items-center gap-[5rem] bg-white/10 p-4 rounded-md shadow-lg m-[.5rem]">
+                <div className="flex justify-between items-center gap-[5rem] bg-white/10 p-4 rounded-md shadow-lg m-[.5rem ">
                   <img
                     src={`${API_BASE}${item.image}`}
                     alt={item.productName}
@@ -142,6 +142,7 @@ function Order({ order, isExpanded, onToggle }) {
         </div>
 
         <div className="flex justify-between m-[1rem]">
+
           <button
             onClick={onToggle}
             className="bg-red-400 p-[.7rem] w-[30%] md:w-[20%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer">

@@ -92,8 +92,8 @@ function Nav2() {
         </div>
         <div className="navbar-center lg:flex">
           <ul className="menu menu-horizontal font-semibold md:text-lg ">
-            <li><Link to="/">About</Link></li>
             <li><Link to="/menu">Menu</Link></li>
+            <li><Link to="/">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             {decode?.roles === "user" && (
               <li>

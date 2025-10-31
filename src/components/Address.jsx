@@ -240,15 +240,15 @@ function Address() {
                     <li key={index} className='bg-white/10 p-4 rounded-[.5rem] w-[95%] md:w-[85%] mt-[3rem] shadow-md hover:scale-105 transition-all duration-500'>
                         <div className='flex justify-between'>
                             <div>
-                                <div><strong>Name: </strong>{a.userName}</div>
-                                <div><strong>House No: </strong>{a.houseNo}</div>
-                                <div><strong>Colony: </strong>{a.colony} </div>
-                                <div><strong>Area: </strong>{a.area}</div>
-                                <div><strong>City: </strong>{a.city}</div>
-                                <div><strong>State: </strong>{a.state}</div>
-                                <div><strong>Pincode: </strong>{a.pincode}</div>
-                                <div><strong>Phone No: </strong>{a.phoneNumber}</div>
-                                <div><strong>Landmark: </strong>{a.landmark} </div>
+                                <div className='break-words'><strong>Name: </strong>{a.userName}</div>
+                                <div className='break-words'><strong>House No: </strong>{a.houseNo}</div>
+                                <div className='break-words'><strong>Colony: </strong>{a.colony} </div>
+                                <div className='break-words'><strong>Area: </strong>{a.area}</div>
+                                <div className='break-words'><strong>City: </strong>{a.city}</div>
+                                <div className='break-words'><strong>State: </strong>{a.state}</div>
+                                <div className='break-words'><strong>Pincode: </strong>{a.pincode}</div>
+                                <div className='break-words'><strong>Phone No: </strong>{a.phoneNumber}</div>
+                                <div className='break-words'><strong>Landmark: </strong>{a.landmark} </div>
                             </div>
                             <div className="flex flex-col gap-1 ">
                                 <div className='flex items-center gap-3'>

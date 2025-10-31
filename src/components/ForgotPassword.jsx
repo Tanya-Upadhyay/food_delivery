@@ -59,8 +59,8 @@ function ForgotPassword() {
       <ToastContainer position="top-center" />
       {step === 1 && (
         <form onSubmit={handleSendOtp} className="flex flex-col gap-4 bg-white/10 w-[40%] p-12 rounded-md shadow-md flex flex-col justify-center items-center">
-          <h2 className="text-2xl font-bold text-black">Forgot Password</h2>
-          <input type="email" placeholder="Enter your email" className="p-2 shadow-lg rounded w-[60%]" onChange={e => setEmail(e.target.value)} />
+          <h2 className="text-2xl font-bold ">Forgot Password</h2>
+          <input type="email" placeholder="Enter your email" className="p-2 shadow-lg rounded w-[60%] bg-gray-50 placeholder-gray-400" onChange={e => setEmail(e.target.value)} />
           <button
             type="submit"
             disabled={isSendingOtp}

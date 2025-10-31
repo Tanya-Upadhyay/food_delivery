@@ -67,6 +67,7 @@ function UserDetails() {
             <div className='flex flex-col gap-2 mb-4'>
               <input
                 name='name'
+                maxLength={50}
                 onChange={handleUserDetailsChange}
                 value={userFormData.name}
                 placeholder='Name'

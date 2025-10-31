@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react"
 import { fetchActiveProducts, fetchProducts, fetchTopSellingProducts } from "../services/ProductService";
 import { fetchCart as getCartItems } from "../services/cartService";
 import { fetchOrder as getOrderItems } from "../services/GetOrderService";
+import { useNavigate } from "react-router-dom";
 
 export const dataContext = createContext()
 export function UserContext({ children }) {
@@ -18,6 +19,7 @@ export function UserContext({ children }) {
   const [pageSize, setPageSize] = useState(8);
   const [totalItems, setTotalItems] = useState(0);
   const [bestSellerIds, setBestSellerIds] = useState([]);
+  
 
 const fetchTopSellerIds = async () => {
   try {
@@ -95,8 +97,12 @@ useEffect(() => {
   } 
 }, [localStorage.getItem('authToken')]); 
 
-
-
+const handleLogout = async () => {
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("activeSection");
+    localStorage.setItem('isLoggedIn', false);
+    setBackendCart([]);
+  };
   const data = {
     input,
     setInput,
@@ -123,6 +129,7 @@ useEffect(() => {
     paymentMethod,
     setPaymentMethod,
     bestSellerIds,
+    handleLogout
   };
 
   return (

@@ -9,9 +9,10 @@ import UserDetails from './UserDetails';
 import { ToastContainer } from 'react-toastify';
 import Cart from './Cart';
 import { fetchUser as getUserDetails } from "../services/UserService";
+import { fetchCart } from '../services/cartService';
 
 function User() {
-  const { backendOrders } = useContext(dataContext);
+  const { backendOrders, handleLogout } = useContext(dataContext);
   const token = localStorage.getItem("authToken");
   const [activeSection, setActiveSection] = useState(() => {
     const savedSection = localStorage.getItem("activeSection");
@@ -50,12 +51,7 @@ function User() {
     }
   }, []);
 
-  const handleLogout = async () => {
-    localStorage.removeItem("authToken");
-    localStorage.removeItem("activeSection");
-    localStorage.setItem('isLoggedIn', false);
-    navigate("/about");
-  };
+
 
   const handleToggleDetails = (orderId) => {
     setExpandedOrderId(prevId => (prevId === orderId ? null : orderId));
@@ -66,7 +62,7 @@ function User() {
       <Nav2 />
       <>
         <div className='w-[28vw] h-[100%] md:w-[20vw] fixed top-22 left-0 bg-tranparent shadow-lg transition-all duration-500 overflow-y-auto overflow-x-hidden flex flex-col rounded-[.5rem] bg-white/10'>
-          <p className='text-xl text-red-500 ml-7 mt-7'>
+          <p className='text-xl text-red-500 ml-7 mt-7 break-words'>
             hey <strong>{user?.name}</strong>
           </p>
           <div className='flex flex-col gap-2 text-xl md:ml-10 mt-10 font-bold'>
@@ -114,7 +110,10 @@ function User() {
               <p className="mb-6 text-gray-500">Are you sure you want to Logout?</p>
               <div className="flex justify-center space-x-4">
                 <button
-                  onClick={handleLogout}
+                  onClick={() => {
+                    handleLogout();
+                    navigate("/about");
+                  }}
                   className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400"
                 >
                   Yes
