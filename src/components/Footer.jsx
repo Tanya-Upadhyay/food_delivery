@@ -8,8 +8,8 @@ function Footer() {
       <footer className="footer footer-horizontal footer-center bg-tranparent text-base-content rounded p-2 shadow-lg mt-[2rem]">
 
         <nav className="grid grid-flow-col gap-3 text-lg font-semibold ">
-          <Link to="/">About</Link>
           <Link to="/menu">Menu</Link>
+          <Link to="/">About</Link>
           <Link to="/contact">Contact</Link>
           {user?.roles === "admin" &&
             <Link to="/admin">AdminPanel</Link>}
