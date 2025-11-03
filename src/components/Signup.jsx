@@ -5,6 +5,7 @@ import Nav2 from './Nav2'
 import Footer from './Footer'
 import axios from 'axios'
 import { signupUser } from '../services/SignupService'
+import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 
 function Signup() {
   const [step, setStep] = useState(1)
@@ -14,6 +15,7 @@ function Signup() {
   const [password, setPassword] = useState("")
   const [otp, setOtp] = useState("")
   const [isOtpSent, setIsOtpSent] = useState(false)
+  const [showPassword, setShowPassword] = useState(false)
 
   const navigate = useNavigate()
   const API_BASE = import.meta.env.VITE_BASE_URL;
@@ -87,11 +89,29 @@ function Signup() {
               onChange={e => setPhoneNumber(e.target.value)}
               className='flex bg-transparent p-[14px] w-[25rem] gap-[1rem] rounded-md m-[1rem] shadow-lg hover:scale-102 transtition-all duration-500 bg-white/10' 
               inputMode='numeric'/>
-            <input
-              type="password"
-              placeholder='password'
-              onChange={e => setPassword(e.target.value)}
-              className='flex bg-transparent p-[14px] w-[25rem] gap-[1rem] rounded-md m-[1rem] shadow-lg hover:scale-102 transtition-all duration-500 bg-white/10' />
+            <div className='relative w-[25rem] m-[1rem]'>
+              <input
+                type={showPassword ? "text" : "password"}
+                placeholder='password'
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                className='flex bg-white/10 p-[14px] w-full gap-[1rem] rounded-md shadow-lg hover:scale-102 transition-all duration-500 pr-10'
+                required
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className='absolute right-3 top-3 '
+              >
+                {showPassword ? (
+                  <EyeIcon className="h-5 w-5" />
+                  
+                ) : (
+                  <EyeSlashIcon className="h-5 w-5" />
+                )}
+              </button>
+            </div>
+              
             <button
               type="submit"
               disabled={isOtpSent}

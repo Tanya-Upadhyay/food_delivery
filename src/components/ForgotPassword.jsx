@@ -2,7 +2,7 @@ import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 function ForgotPassword() {
   const [step, setStep] = useState(1);
   const [email, setEmail] = useState("");
@@ -11,7 +11,7 @@ function ForgotPassword() {
   const [isSendingOtp, setIsSendingOtp] = useState(false);
   const [isVerifyingOtp, setIsVerifyingOtp] = useState(false);
   const [isResettingPassword, setIsResettingPassword] = useState(false);
-
+ const [showPassword, setShowPassword] = useState(false)
   const API_BASE = import.meta.env.VITE_BASE_URL;
   const navigate = useNavigate();
 
@@ -86,7 +86,26 @@ function ForgotPassword() {
       {step === 3 && (
         <form onSubmit={handleResetPassword} className="flex flex-col gap-4 w-[40%] bg-white/10 p-12 rounded-md shadow-md shadow-md flex flex-col justify-center items-center ">
           <h2 className="text-2xl font-bold text-black">Reset Password</h2>
-          <input type="password" placeholder="New Password" className="p-2 shadow-lg rounded w-[60%]" onChange={e => setNewPassword(e.target.value)} />
+          <div className='relative w-[25rem] m-[1rem]'>
+          <input 
+          type={showPassword ? "text" : "password"} 
+          placeholder="New Password" 
+          className='flex bg-white/10 p-[14px] w-full gap-[1rem] rounded-md shadow-lg hover:scale-102 transition-all duration-500 pr-10'
+          onChange={e => setNewPassword(e.target.value)} required/>
+          
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className='absolute right-3 top-3 '
+              >
+                {showPassword ? (
+                  <EyeIcon className="h-5 w-5" />
+                  
+                ) : (
+                  <EyeSlashIcon className="h-5 w-5" />
+                )}
+              </button>
+            </div>
           <button
             type="submit"
             disabled={isResettingPassword}

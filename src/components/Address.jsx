@@ -177,36 +177,42 @@ function Address() {
                                 onChange={handleAddressChange}
                                 value={addressFormData.userName}
                                 placeholder='Name'
+                                maxLength={50}
                                 className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
                             <input
                                 name='houseNo'
                                 onChange={handleAddressChange}
                                 value={addressFormData.houseNo}
                                 placeholder='House'
+                                maxLength={10}
                                 className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
                             <input
                                 name='colony'
                                 onChange={handleAddressChange}
                                 value={addressFormData.colony}
                                 placeholder='Colony'
+                                maxLength={20}
                                 className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg' />
                             <input
                                 name='area'
                                 onChange={handleAddressChange}
                                 value={addressFormData.area}
                                 placeholder='Area'
+                                maxLength={20}
                                 className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg' />
                             <input
                                 name='city'
                                 onChange={handleAddressChange}
                                 value={addressFormData.city}
                                 placeholder='City'
+                                maxLength={20}
                                 className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
                             <input
                                 name='state'
                                 onChange={handleAddressChange}
                                 value={addressFormData.state}
                                 placeholder='State'
+                                maxLength={20}
                                 className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
                             <input
                                 name="pincode"
@@ -277,12 +283,12 @@ function Address() {
                                         setAddressFormData(a);
                                         setShowAddressForm(true);
                                     }}
-                                    className="bg-red-400 p-[.7rem] w-[40%] rounded-md font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer">
+                                    className="bg-red-400 p-[.7rem] w-[40%] rounded-md mt-[.5rem] font-bold shadow-md text-white hover:scale-105 transition-all duration-500 cursor-pointer">
                                     Edit
                                 </button>
 
                                 {!a.isPrimary && (
-                                    <div className="flex gap-4 items-center ml-[2rem]">
+                                    <div className="flex gap-4 items-center ml-[1rem]">
                                         <IoTrash className="h-[2rem] w-[2rem] cursor-pointer text-red-500" onClick={() => deleteAddress(a.aid)} />
                                     </div>
                                 )}

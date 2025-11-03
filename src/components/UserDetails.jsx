@@ -35,11 +35,17 @@ function UserDetails() {
     fetchUser();
   }, []);
 
+  
   const handleUserDetailsSave = async () => {
     if (userFormData.phoneNumber.length !== 10) {
       toast.error("Please enter a valid phone number" , {id:"unique-toast"});
       return;
     }
+
+    if (!userFormData.name || !userFormData.email || !userFormData.phoneNumber ) {
+            toast.error("All fields are required",{id:"unique-toast"});
+            return false;
+        }
 
     try {
       const res = await axios.put(`${API_BASE}/api/Users/${decode.uid}`, userFormData, {
@@ -71,13 +77,16 @@ function UserDetails() {
                 onChange={handleUserDetailsChange}
                 value={userFormData.name}
                 placeholder='Name'
-                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg' />
+                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg' 
+                required/>
               <input
                 name='email'
+                maxLength={50}
                 onChange={handleUserDetailsChange}
                 value={userFormData.email}
                 placeholder='Email'
-                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' />
+                className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' 
+                required/>
               <input
                 name='phoneNumber'
                 type="number"
@@ -86,7 +95,8 @@ function UserDetails() {
                 value={userFormData.phoneNumber}
                 placeholder='PhoneNo'
                 className='bg-white/10 p-[14px] w-[25rem] rounded-md m-[0.5rem] shadow-lg ' 
-                inputMode='numeric'/>
+                inputMode='numeric'
+                required/>
               <button
                 onClick={handleUserDetailsSave}
                 className="bg-red-400 p-[.7rem] w-[20%] m-[0.5rem] rounded-md font-bold shadow-md text-white hover:bg-red-300 cursor-pointer">

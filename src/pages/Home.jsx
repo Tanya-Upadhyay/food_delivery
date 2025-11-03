@@ -2,12 +2,13 @@ import { IoMdSearch } from "react-icons/io"
 import Categories from "../Category"
 import Card from "../components/Card"
 import { dataContext } from "../context/userContext"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { ToastContainer } from "react-toastify"
 import Footer from "../components/Footer"
 import Nav2 from "../components/Nav2"
 import Cart from "../components/Cart"
 function Home() {
+  
   const {
     cate = [],
     setInput,
@@ -18,9 +19,11 @@ function Home() {
     totalItems,
     bestSellerIds
   } = useContext(dataContext);
+   const [selectedCategory, setSelectedCategory] = useState("All");
   function filter(category) {
     setInput(category === "All" ? "" : category);
     setPage(1);
+    setSelectedCategory(category);
   }
   return (
     <>
@@ -37,13 +40,20 @@ function Home() {
             onChange={(e) => {
               setInput(e.target.value);
               setPage(1);
+              
             }}
-            value={input}
+            
           />
         </form>
         <div className="flex gap-[2.5rem] justify-center items-center m-[3rem] sm:flex-wrap gap-[1rem] ">
           {Categories.map((item, index) => {
-            return <div className="bg-white/10  w-[10rem] h-[8rem] flex flex-col justify-center items-center gap-[1rem] rounded-lg shadow-lg hover:scale-110 hover:bg-white/10 cursor-pointer transition-all duration-500 font-bold sm: w-[5rem] h-[4rem]"
+            const isActive = selectedCategory === item.name;
+            return <div className={`bg-white/10  w-[10rem] h-[8rem] flex flex-col justify-center items-center gap-[1rem] rounded-lg shadow-lg  hover:bg-white/10 cursor-pointer transition-all duration-500 font-bold sm: w-[5rem] h-[4rem]
+               ${
+                    isActive
+                       ? "bg-red-500 text-red-400 scale-110" 
+                       : "bg-white/10 hover:bg-white/20 "
+                  }`}
               key={index}
               onClick={() => filter(item.name)}>
               {item.image}
@@ -108,3 +118,5 @@ function Home() {
   )
 }
 export default Home;
+
+

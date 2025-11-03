@@ -144,7 +144,7 @@ function AddProducts() {
                             className='bg-base-100 dark:bg-base-200 '>pasta</option>
                         <option value="soup"
                             className='bg-base-100 dark:bg-base-200 '>soup</option>
-                        <option value="pasta"
+                        <option value="main_course"
                             className='bg-base-100 dark:bg-base-200 '>main_course</option>
                         <option value="pizza"
                             className='bg-base-100 dark:bg-base-200 '>pizza</option>

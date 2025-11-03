@@ -14,7 +14,7 @@ function Card2({ cid, name, price, image, qty, stocks }) {
   const { fetchCart } = useContext(dataContext)
   const updateQty = async (newQty) => {
     const token = localStorage.getItem("authToken");
-    if (newQty >= stocks) {
+    if (newQty > stocks) {
       toast.error(`Limited Stock`,{id:"unique-toast"});
       return;
     }
@@ -63,7 +63,7 @@ function Card2({ cid, name, price, image, qty, stocks }) {
             <button
               className='w-[30%] h-full text-xl font-bold flex justify-center items-center bg-white/10 cursor-pointer hover:bg-red-100'
               onClick={() => { updateQty(qty + 1) }}
-              disabled={qty == stocks}
+              disabled={qty >= stocks}
             >+</button>
           </div>
         </div>
