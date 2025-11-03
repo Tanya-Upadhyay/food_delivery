@@ -65,7 +65,7 @@ function Card({ name, image, id, price, type, stocks, isBestSeller }) {
       </div>
 
       <div className="flex gap-[1rem] w-[90%] justify-center items-center">
-        {isBestSeller ? (<img src="best-seller-stamp-png.png" alt="" className="h-[4rem] w-[7rem] " />) : (<div className="p-[1rem]"></div>)}
+        {isBestSeller ? (<img src="best-seller-stamp-png.png" alt="" className="h-[4rem] w-[7rem] hover:scale-110 transition-all duration-500" />) : (<div className="p-[1rem]"></div>)}
 
         {stocks < 6 &&
           <div className={`p-[.3rem] ${stocks == 0 ? "hidden" : ""}`}>
